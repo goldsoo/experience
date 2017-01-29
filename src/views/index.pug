@@ -78,6 +78,45 @@ block body
               .task= $career.task
               .period= $career.startDate + ' ~ ' + $career.endDate
 
+      .experienceWrapper
+        each $experience in experience
+          .partWrap
+            .projectWrap
+              .col
+                .company= $experience.company
+                .name= $experience.project.name
+
+              .col
+                .appsWrap
+                  each $apps in $experience.project.apps
+                    .row
+                      if $apps.type === 'Mobile Website' && $apps.icon
+                        a.icon(href= $apps.appUrl target="_blank")
+                          img(src= $apps.icon alt= $experience.project.name)
+                      else
+                        .typeWrap
+                          dfn type.
+                          span.type= $apps.type
+
+                      if $apps.url
+                        a.url(href= $apps.url target="_blank")
+                          = $apps.url
+
+                      .description
+                        = $apps.description
+
+                      .periodWrap
+                        dfn 기간
+                        span.period= $apps.period.from + ' ~ ' + $apps.period.to
+
+                      .vcsWrap
+                        dfn Version Control System
+                        span.vcs= $apps.vcs
+
+              .col
+                each $roles in $experience.roles
+                  .roles= $roles
+
       .skillsWrapper
         h2
           span 스킬

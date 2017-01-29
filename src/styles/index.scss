@@ -256,9 +256,8 @@ button {
     }
 
     .skillsWrapper {
-        margin: 2.8rem 0 3.8rem;
-        padding: 2rem 0 1.8rem;
-        padding-right: 0;
+        margin: 0 0 3.8rem;
+        padding: 4.8rem 0 1.8rem;
         background-color: rgba($sub-color, .1);
 
         h2 {
@@ -311,7 +310,7 @@ button {
                     height: 100%;
                     padding-left: 1rem;
                     background-color: $point-color;
-                    animation: slideIn .6s forwards;
+                    animation: slideIn 10s infinite;
                     box-shadow: inset .1rem .1rem rgba(0, 0, 0, .2);
                     opacity: 0;
                     font-size: 1.2rem;
@@ -332,12 +331,120 @@ button {
             }
         }
     }
-}
 
+    .experienceWrapper {
+        background-color: rgba($sub-color, .1);
+
+        .partWrap {
+            padding: 1.5rem 2rem;
+            border-bottom: .1rem solid $bg-color;
+        }
+
+        .projectWrap {
+            display: table;
+            width: 100%;
+            table-layout: fixed;
+            font-size: 1.2rem;
+
+            .col {
+                display: table-cell;
+
+                &:first-child {
+                    width: 25%;
+                    vertical-align: middle;
+
+                    + .col {
+                        width: 60%;
+                    }
+                }
+            }
+
+            a {
+                color: $point-color;
+
+                &:hover {
+                    text-decoration: underline;
+                }
+            }
+
+            .company {
+                padding-bottom: .2rem;
+                font-size: 1.2rem;
+                color: $sub-color;
+            }
+
+            a.icon {
+                display: block;
+                width: 3rem;
+
+                img {
+                    display: block;
+                    width: 100%;
+                }
+            }
+
+            .appsWrap {
+                .row {
+                    margin-right: 2rem;
+                    padding-left: 1rem;
+                    padding-right: 1rem;
+
+                    + .row {
+                        margin-top: 1rem;
+                        padding-top: 1rem;
+                        border-top: .1rem solid $bg-color;
+                    }
+                }
+
+                .typeWrap {
+                    padding-bottom: 1rem;
+                    color: $sub-color;
+
+                    dfn {
+                        display: none;
+                    }
+                }
+
+                .icon {
+                    display: block;
+                    padding-bottom: 1rem;
+                }
+
+                .url {
+                    display: block;
+                    padding-bottom: .4rem;
+                }
+
+                .description {
+                    padding-bottom: 1rem;
+                }
+
+                .periodWrap {
+                    padding-bottom: .4rem;
+                }
+
+                .periodWrap,
+                .vcsWrap {
+                    dfn {
+                        &:after {
+                            content: ":";
+                            padding: 0 .4rem;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
 
 @keyframes slideIn {
     0% {
         transform: translateX(-100%);
+        opacity: 1;
+    }
+
+    10% {
+        transform: translateX(0);
         opacity: 1;
     }
 

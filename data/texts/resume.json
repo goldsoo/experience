@@ -109,26 +109,32 @@
         "name": "인터파크 쇼핑",
         "apps": [
           {
-            "type": "website",
+            "type": "Website",
             "url": "http://www.interpark.com",
-            "description": "",
-            "vcs": "git"
+            "description": "주문서/검색/이벤트템플릿 표준개선, 코너(다이나믹프라이스, 럭키백 등)신규개발, 전문몰(가구/키친/쇼핑) 전시통합 등",
+            "period": {
+              "from": "2013-07-09",
+              "to": ""
+            },
+            "vcs": "SVN"
           },
           {
-            "type": "mobile website",
+            "type": "Mobile Website",
+            "icon": "/images/appIcon/shopping.png",
             "url": "http://m.shop.interpark.com",
-            "description": "",
-            "vcs": "git"
+            "appUrl": "https://play.google.com/store/apps/details?id=com.interpark.shop",
+            "description": "메인, 홈구성, 카테고리, 검색, 주문서 개편, 톡집사 신규",
+            "period": {
+              "from": "2014-12",
+              "to": ""
+            },
+            "vcs": "Git"
           }
         ]
       },
-      "period": {
-        "form": "2013-07-09",
-        "to": "~"
-      },
       "roles": [
         "UI개발",
-        "유지보수"
+        "운영 유지보수"
       ]
     },
     {
@@ -138,20 +144,21 @@
         "name": "인터파크 반려동물 전문몰",
         "apps": [
           {
-            "type": "mobile website",
-            "url": "",
-            "description": "",
-            "vcs": "git"
+            "type": "Mobile Website",
+            "icon": "/images/appIcon/pet.png",
+            "appUrl": "https://play.google.com/store/apps/details?id=com.interpark.pet",
+            "description": "신규 구축(이지리오더, 장바구니, 주문서, 톡집사 등), 참여율 30%",
+            "period": {
+              "from": "2016-05",
+              "to": "2016-10"
+            },
+            "vcs": "Git"
           }
         ]
       },
-      "period": {
-        "form": "2016-06-01",
-        "to": "2016-10-17"
-      },
       "roles": [
         "UI개발",
-        "유지보수"
+        "운영 유지보수"
       ]
     },
     {
@@ -161,26 +168,28 @@
         "name": "인터파크 간편결제 시스템 원페이",
         "apps": [
           {
-            "type": "website",
-            "url": "",
+            "type": "Website",
             "description": "인터파크 최초로 도입하는 간편결제 시스템, Node.js, Gulp 기반 UI프레임워크 신규 구축 후 진행, 참여율 100%",
-            "vcs": "git"
+            "period": {
+              "from": "2016-06",
+              "to": "2017-01"
+            },
+            "vcs": "Git"
           },
           {
-            "type": "mobile website",
-            "url": "",
+            "type": "Mobile Website",
             "description": "인터파크 최초로 도입하는 간편결제 시스템, Node.js, Gulp 기반 UI프레임워크 신규 구축 후 진행, 참여율 100%",
-            "vcs": "git"
+            "period": {
+              "from": "2016-06",
+              "to": "2017-01"
+            },
+            "vcs": "Git"
           }
         ]
       },
-      "period": {
-        "form": "2016-06-01",
-        "to": "2017-01-04"
-      },
       "roles": [
         "UI개발",
-        "유지보수"
+        "운영 유지보수"
       ]
     },
     {
@@ -190,26 +199,30 @@
         "name": "인터파크 판매자 매니저 관리 시스템",
         "apps": [
           {
-            "type": "website",
-            "url": "",
-            "description": "리뉴얼, 비표준->표준전환, 광고센터 개선",
-            "vcs": "git"
+            "type": "Website",
+            "description": "메인 리뉴얼, 비표준 -> 표준전환, 광고센터 개선",
+            "period": {
+              "from": "2015-09",
+              "to": "2016-03"
+            },
+            "vcs": "Git"
           },
           {
-            "type": "mobile website",
-            "url": "",
-            "description": "신규구축, 참여율 30%",
-            "vcs": "git"
+            "type": "Mobile Website",
+            "icon": "/images/appIcon/seller.png",
+            "appUrl": "https://play.google.com/store/apps/details?id=com.interpark.sellermanager",
+            "description": "신규구축(메인, 조회리스트 등), 참여율 30%",
+            "period": {
+              "from": "2016-06-01",
+              "to": "2016-10-17"
+            },
+            "vcs": "Git"
           }
         ]
       },
-      "period": {
-        "form": "2016-06-01",
-        "to": "2016-10-17"
-      },
       "roles": [
         "UI개발",
-        "유지보수"
+        "운영 유지보수"
       ]
     },
     {
@@ -219,20 +232,20 @@
         "name": "인터파크 장난감왕국 아이토이즈",
         "apps": [
           {
-            "type": "website",
+            "type": "Website",
             "url": "http://toy.interpark.com",
-            "description": "외주제작, 소스정리, UI개선",
-            "vcs": "git"
+            "description": "메인/주문서/toyDB 신규, 소스정리, UI개선",
+            "period": {
+              "from": "2014-10",
+              "to": "2014-12"
+            },
+            "vcs": "Git"
           }
         ]
       },
-      "period": {
-        "form": "2016-06-01",
-        "to": "2016-10-17"
-      },
       "roles": [
         "UI개발",
-        "유지보수"
+        "운영 유지보수"
       ]
     },
     {
@@ -242,20 +255,20 @@
         "name": "인터파크 글로벌 쇼핑",
         "apps": [
           {
-            "type": "website",
+            "type": "Website",
             "url": "http://www.globalinterpark.com",
-            "description": "다국어(일어, 중국어, 영어)작업, 참여율 25%",
-            "vcs": "git"
+            "description": "신규 구축(메인, 상품상세, 주문서 등), 다국어(일어, 중국어, 영어)작업, Swig사용, 참여율 25%",
+            "period": {
+              "from": "2014-09",
+              "to": "2014-11"
+            },
+            "vcs": "Git"
           }
         ]
       },
-      "period": {
-        "form": "2014-09-01",
-        "to": "2014-11-06"
-      },
       "roles": [
         "UI개발",
-        "유지보수"
+        "운영 유지보수"
       ]
     }
   ],
@@ -338,12 +351,12 @@
       "title": "Version Control System",
       "list": [
         {
-          "name": "git",
+          "name": "Git",
           "image": "",
           "percentage": 80
         },
         {
-          "name": "svn",
+          "name": "SVN",
           "image": "",
           "percentage": 75
         }
