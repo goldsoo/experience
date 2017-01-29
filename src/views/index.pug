@@ -11,5 +11,142 @@ block append css
   link(rel="stylesheet" href="./styles/index.css")
 
 block body
-  .container= name
-    div 안녕하세요
+  .container
+    .topWrapper
+      .img
+        img(src= basics.picture alt= basics.name.korea)
+      .messageWrapper
+        | Hello, I'M CHA SOO YOUNG
+
+      .infoWrap
+        .row
+          .part
+            dfn name.
+            span.detail= basics.name.korea
+          .part
+            dfn m.
+            span.detail= basics.phone.handPhone
+          .part
+            dfn e-mail.
+            span.detail= basics.email
+
+        .row
+          .part
+            dfn website.
+            a.detail(href= 'https://' + basics.website target="_blank")
+              = basics.website
+          .part
+            dfn github.
+            a.detail(href= 'https://' + basics.github target="_blank")
+              = basics.github
+
+        .row
+          .part
+            dfn addr.
+            span.detail= basics.location.koreaAddress
+
+    .contentsWrapper
+      .educationWrapper
+        h2
+          span 학력
+
+        .partWrap
+          each $education in education
+            .part(class= $education.grade)
+              .institution= $education.institution
+
+              if $education.major
+                .major= $education.major
+
+              if $education.gpa
+                .gpa= $education.gpa
+
+              .period
+                = $education.startDate + ' ~ ' + $education.endDate
+
+      .careerWrapper
+        h2
+          span 경력
+
+        .partWrap
+          each $career in career
+            .part(class= $career.label)
+              .company= $career.company
+              .row
+                span.department= $career.department
+                span.rank= $career.rank
+              .task= $career.task
+              .period= $career.startDate + ' ~ ' + $career.endDate
+
+      .skillsWrapper
+        h2
+          span 스킬
+
+        .skillContentsWrap
+          .partWrap
+            .part.language
+              .title= skills.language.title
+              .listWrap
+                each $list in skills.language.list
+                  .row
+                    span.name(style= 'width:' +  $list.percentage + '%')
+                      em= $list.name + ' ' + $list.percentage + '%'
+
+            .part.templateEngines
+              .title= skills.templateEngines.title
+              .listWrap
+                each $list in skills.templateEngines.list
+                  .row
+                    span.name(style= 'width:' +  $list.percentage + '%')
+                      em= $list.name + ' ' + $list.percentage + '%'
+                  .website= $list.website
+                  .description= $list.description
+
+            .part.softwareTools
+              .title= skills.softwareTools.title
+              .listWrap
+                each $list in skills.softwareTools.list
+                  .row
+                    span.name(style= 'width:' +  $list.percentage + '%')
+                      em= $list.name + ' ' + $list.percentage + '%'
+
+            .part.versionControlSystem
+              .title= skills.versionControlSystem.title
+              .listWrap
+                each $list in skills.versionControlSystem.list
+                  .row
+                    span.name(style= 'width:' +  $list.percentage + '%')
+                      em= $list.name + ' ' + $list.percentage + '%'
+
+      .certificateWrapper
+        h2 자격증
+
+        .partWrap
+          each $certificate in certificate
+            .part
+              .col.name= $certificate.name
+              .col.acquireDate= $certificate.acquireDate
+
+      .educationCompletionWrapper
+        h2 교육이수
+
+        .partWrap
+          each $educationCompletion in educationCompletion
+            .part
+              .col.institution= $educationCompletion.institution
+              .col.period
+                = $educationCompletion.startDate + ' ~ ' + $educationCompletion.endDate
+              .col.name= $educationCompletion.name
+              .col.label= $educationCompletion.label
+
+      .awardsWrapper
+        h2 수상
+
+        .partWrap
+          each $awards in awards
+            .part
+              .col.title= $awards.title
+              .col.date= $awards.date
+              .col.awarder= $awards.awarder
+              .col.summary= $awards.summary
+

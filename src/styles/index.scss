@@ -1,6 +1,347 @@
 @charset "utf-8";
 
+$base: "/images";
+$bg-color: #333;
+$point-color: #71acbc;
+$sub-color: #999;
+
+html {
+    background-color: $bg-color;
+    color: #fff;
+}
+
+input,
+button {
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    outline: none;
+}
+
 .container {
-    font-size: 2rem;
-    color: #ff6347;
+    max-width: 89rem;
+    min-width: 32rem;
+    margin: 0 auto;
+    font-size: 1.4rem;
+}
+
+.topWrapper {
+    padding: 5rem 0 3rem;
+    border-bottom: .1rem dashed $sub-color;
+    text-align: center;
+
+    .img {
+        box-sizing: border-box;
+        display: inline-block;
+        width: 9rem;
+        height: 9rem;
+        margin-bottom: 1rem;
+        border: .5rem solid $point-color;
+        border-radius: 50%;
+        background-color: #eee;
+        overflow: hidden;
+        text-align: center;
+
+        img {
+            width: 100%;
+            margin-top: -1.2rem;
+            object-fit: cover;
+        }
+    }
+
+    .messageWrapper {
+        font-size: 1.8rem;
+        padding-bottom: 2rem;
+    }
+
+    .infoWrap {
+        .row {
+            + .row {
+                margin-top: .6rem;
+
+                &:last-child {
+                    margin-top: .8rem;
+                }
+            }
+
+            .part {
+                display: inline-block;
+
+                + .part {
+                    padding-left: 2rem;
+                }
+
+                dfn {
+                    padding-right: .6rem;
+                    font-size: 1.2rem;
+                    color: $sub-color;
+                }
+
+                .detail {
+                    color: #fff;
+                }
+            }
+        }
+    }
+}
+
+.contentsWrapper {
+    padding: 3rem 0;
+
+    .educationWrapper {
+        padding-bottom: 2.8rem;
+
+        h2 {
+            padding-bottom: .8rem;
+            font-size: 1.6rem;
+            font-weight: normal;
+            color: $bg-color;
+
+            span {
+                padding: 0 .4rem;
+                background-color: $point-color;
+            }
+        }
+
+        .partWrap {
+            position: relative;
+            padding-top: 10rem;
+            border-bottom: .2rem solid $point-color;
+
+            .part {
+                position: absolute;
+                bottom: -.8rem;
+
+                &:after {
+                    content: "";
+                    display: block;
+                    width: 1rem;
+                    height: 1rem;
+                    border-radius: 50%;
+                    border: .2rem solid $point-color;
+                    background-color: $bg-color;
+                }
+
+                &.highSchool {
+                    left: 5%;
+                }
+
+                &.college {
+                    left: 37%;
+                }
+
+                &.university {
+                    left: 70%;
+                }
+
+                .institution {
+                    padding-bottom: .4rem;
+                }
+
+                .major,
+                .gpa {
+                    font-size: 1.2rem;
+                }
+
+                .period {
+                    padding: 1rem 0 .2rem;
+                    font-size: 1.2rem;
+                    color: $sub-color;
+                }
+            }
+        }
+    }
+
+    .careerWrapper {
+        padding-bottom: 2.8rem;
+
+        h2 {
+            padding-bottom: .8rem;
+            font-size: 1.6rem;
+            font-weight: normal;
+            color: $bg-color;
+
+            span {
+                padding: 0 .4rem;
+                background-color: $point-color;
+            }
+        }
+
+        .partWrap {
+            position: relative;
+            padding-top: 10rem;
+            border-bottom: .2rem solid $point-color;
+
+            .part {
+                position: absolute;
+                bottom: -.8rem;
+
+                &:after {
+                    content: "";
+                    display: block;
+                    width: 1rem;
+                    height: 1rem;
+                    border-radius: 50%;
+                    border: .2rem solid $point-color;
+                    background-color: $bg-color;
+                }
+
+                &.ako {
+                    left: 5%;
+                }
+
+                &.interpark {
+                    left: 37%;
+                }
+
+                .company {
+                    padding-bottom: .4rem;
+                }
+
+                .row {
+                    font-size: 1.2rem;
+
+                    .rank {
+                        padding-left: .5rem;
+                    }
+                }
+
+                .task {
+                    font-size: 1.2rem;
+                }
+
+                .period {
+                    padding: 1rem 0 .2rem;
+                    font-size: 1.2rem;
+                    color: $sub-color;
+                }
+            }
+        }
+    }
+
+    .certificateWrapper,
+    .educationCompletionWrapper,
+    .awardsWrapper {
+        padding-bottom: 4.8rem;
+        font-size: 1.3rem;
+
+        h2 {
+            padding-bottom: .4rem;
+            font-size: 1.6rem;
+            font-weight: normal;
+            color: #999;
+        }
+
+        .partWrap {
+            border-top: .1rem solid $point-color;
+            border-bottom: .1rem solid $point-color;
+
+            .part {
+                display: table;
+                width: 100%;
+                table-layout: fixed;
+                padding: 1rem 0;
+
+                + .part {
+                    border-top: .1rem solid rgba($sub-color, .3);
+                }
+
+                .col {
+                    display: table-cell;
+
+                    &:first-child {
+                        width: 30%;
+                    }
+                }
+            }
+        }
+    }
+
+    .skillsWrapper {
+        margin: 2.8rem 0 3.8rem;
+        padding: 2rem 0 1.8rem;
+        padding-right: 0;
+        background-color: rgba($sub-color, .1);
+
+        h2 {
+            padding-bottom: 1.8rem;
+            font-size: 1.6rem;
+            font-weight: normal;
+            color: $bg-color;
+
+            span {
+                padding: 0 .4rem;
+                background-color: rgba($sub-color, .8);
+            }
+        }
+
+        .skillContentsWrap {
+            margin-left: 2rem;
+
+            .partWrap {
+                display: table;
+                width: 100%;
+                table-layout: fixed;
+            }
+
+            .part {
+                display: table-cell;
+                padding-right: 2rem;
+            }
+
+            .title {
+                color: $point-color;
+                padding-bottom: 1rem;
+            }
+
+            .row {
+                width: 100%;
+                height: 1.8rem;
+                margin-top: 1rem;
+                background-color: rgba($sub-color, .4);
+                box-shadow: inset 1px 1px rgba(0, 0, 0, .1);
+                overflow: hidden;
+                transform: translateZ(0);
+
+                &:first-child {
+                    margin-top: 0;
+                }
+
+                span.name {
+                    box-sizing: border-box;
+                    display: block;
+                    height: 100%;
+                    padding-left: 1rem;
+                    background-color: $point-color;
+                    animation: slideIn .6s forwards;
+                    box-shadow: inset .1rem .1rem rgba(0, 0, 0, .2);
+                    opacity: 0;
+                    font-size: 1.2rem;
+
+                    em {
+                        display: inline-block;
+                        padding-top: .2rem;
+                        color: $bg-color;
+                    }
+                }
+            }
+
+            .website,
+            .description {
+                display: none;
+                font-size: 1.2rem;
+                color: rgba($sub-color, .8);
+            }
+        }
+    }
+}
+
+
+@keyframes slideIn {
+    0% {
+        transform: translateX(-100%);
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 1;
+    }
 }

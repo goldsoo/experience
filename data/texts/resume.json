@@ -1,5 +1,353 @@
 {
-  "name": "chasooyoung",
-  "site": "chasooyoung.com",
-  "email": "soo@chasooyoung.com"
+  "basics": {
+    "name": {
+      "korea": "차수영",
+      "english": "Cha Soo Young"
+    },
+    "phone": {
+      "tel": "02-312-0609",
+      "handPhone": "010-3743-9397"
+    },
+    "picture": "images/chasooyoung.jpg",
+    "email": "soo@chasooyoung.com",
+    "website": "chasooyoung.com",
+    "github": "github.com/goldsoo",
+    "location": {
+      "koreaAddress": "서울시 마포구 마포대로 195 마포래미안푸르지오 108-1202",
+      "address": "108-1202, Mapo Raemian Prugio, 195, Mapo-daero, Mapo-gu",
+      "postalCode": "04129",
+      "city": "Seoul",
+      "countryCode": "Rep. of KOREA"
+    }
+  },
+  "education": [
+    {
+      "grade": "highSchool",
+      "institution": "이화여자고등학교",
+      "startDate": "1997-03",
+      "endDate": "2000-02"
+    },
+    {
+      "grade": "college",
+      "institution": "안양과학대학(연성대학교)",
+      "startDate": "2000-03",
+      "endDate": "2002-02",
+      "major": "산업디자인학과 > 커뮤니케이션디자인 전공",
+      "gpa": "4.04/4.5"
+    },
+    {
+      "grade": "university",
+      "institution": "한국방송통신대학",
+      "startDate": "2004-03",
+      "endDate": "2006-02",
+      "major": "사회과학 > 미디어영상학과",
+      "gpa": "2.6/4.3"
+    }
+  ],
+  "awards": [
+    {
+      "title": "Communication Design Association of Korea",
+      "date": "2001",
+      "awarder": "(사)커뮤니케이션디자인협회",
+      "summary": "캐릭터부문 입선"
+    },
+    {
+      "title": "제37회 전국산업디자인공모전",
+      "date": "2001",
+      "awarder": "(사)대한산업미술가협회",
+      "summary": "우표디자인 입선"
+    }
+  ],
+  "career": [
+    {
+      "company": "아트코리아",
+      "label": "ako",
+      "department": "디자인팀",
+      "rank": "과장",
+      "startDate": "2001-05",
+      "endDate": "2013-01",
+      "task": "광고디자인, 포스터디자인 등 editorial design"
+    },
+    {
+      "company": "인터파크",
+      "label": "interpark",
+      "department": "UI개발팀",
+      "rank": "대리",
+      "startDate": "2003-07-09",
+      "endDate": "",
+      "task": "UI개발, HTML, CSS, JavaScript, JQuery"
+    }
+  ],
+  "educationCompletion": [
+    {
+      "institution": "한국직업전문학교",
+      "startDate": "2013-04-15",
+      "endDate": "2013-06-12",
+      "name": "웹전문가과정",
+      "label": "웹 전문가 과정 이수, 웹접근성, 웹표준코딩, Html, Css, javascript, Jquery"
+    }
+  ],
+  "certificate": [
+    {
+      "name": "컴퓨터그래픽스운용기능사",
+      "acquireDate": "2001-04-16"
+    },
+    {
+      "name": "디자인실기교사",
+      "acquireDate": "2002-02-07"
+    },
+    {
+      "name": "시각디자인산업기사",
+      "acquireDate": "2004-12-04"
+    }
+  ],
+  "experience": [
+    {
+      "name": "Shopping",
+      "company": "INTERPARK",
+      "project": {
+        "name": "인터파크 쇼핑",
+        "apps": [
+          {
+            "type": "website",
+            "url": "http://www.interpark.com",
+            "description": "",
+            "vcs": "git"
+          },
+          {
+            "type": "mobile website",
+            "url": "http://m.shop.interpark.com",
+            "description": "",
+            "vcs": "git"
+          }
+        ]
+      },
+      "period": {
+        "form": "2013-07-09",
+        "to": "~"
+      },
+      "roles": [
+        "UI개발",
+        "유지보수"
+      ]
+    },
+    {
+      "name": "Pet",
+      "company": "INTERPARK",
+      "project": {
+        "name": "인터파크 반려동물 전문몰",
+        "apps": [
+          {
+            "type": "mobile website",
+            "url": "",
+            "description": "",
+            "vcs": "git"
+          }
+        ]
+      },
+      "period": {
+        "form": "2016-06-01",
+        "to": "2016-10-17"
+      },
+      "roles": [
+        "UI개발",
+        "유지보수"
+      ]
+    },
+    {
+      "name": "Onepay",
+      "company": "INTERPARK",
+      "project": {
+        "name": "인터파크 간편결제 시스템 원페이",
+        "apps": [
+          {
+            "type": "website",
+            "url": "",
+            "description": "인터파크 최초로 도입하는 간편결제 시스템, Node.js, Gulp 기반 UI프레임워크 신규 구축 후 진행, 참여율 100%",
+            "vcs": "git"
+          },
+          {
+            "type": "mobile website",
+            "url": "",
+            "description": "인터파크 최초로 도입하는 간편결제 시스템, Node.js, Gulp 기반 UI프레임워크 신규 구축 후 진행, 참여율 100%",
+            "vcs": "git"
+          }
+        ]
+      },
+      "period": {
+        "form": "2016-06-01",
+        "to": "2017-01-04"
+      },
+      "roles": [
+        "UI개발",
+        "유지보수"
+      ]
+    },
+    {
+      "name": "Interpark Partner Support System",
+      "company": "INTERPARK",
+      "project": {
+        "name": "인터파크 판매자 매니저 관리 시스템",
+        "apps": [
+          {
+            "type": "website",
+            "url": "",
+            "description": "리뉴얼, 비표준->표준전환, 광고센터 개선",
+            "vcs": "git"
+          },
+          {
+            "type": "mobile website",
+            "url": "",
+            "description": "신규구축, 참여율 30%",
+            "vcs": "git"
+          }
+        ]
+      },
+      "period": {
+        "form": "2016-06-01",
+        "to": "2016-10-17"
+      },
+      "roles": [
+        "UI개발",
+        "유지보수"
+      ]
+    },
+    {
+      "name": "Interpark itoys",
+      "company": "INTERPARK",
+      "project": {
+        "name": "인터파크 장난감왕국 아이토이즈",
+        "apps": [
+          {
+            "type": "website",
+            "url": "http://toy.interpark.com",
+            "description": "외주제작, 소스정리, UI개선",
+            "vcs": "git"
+          }
+        ]
+      },
+      "period": {
+        "form": "2016-06-01",
+        "to": "2016-10-17"
+      },
+      "roles": [
+        "UI개발",
+        "유지보수"
+      ]
+    },
+    {
+      "name": "Global Interpark",
+      "company": "INTERPARK",
+      "project": {
+        "name": "인터파크 글로벌 쇼핑",
+        "apps": [
+          {
+            "type": "website",
+            "url": "http://www.globalinterpark.com",
+            "description": "다국어(일어, 중국어, 영어)작업, 참여율 25%",
+            "vcs": "git"
+          }
+        ]
+      },
+      "period": {
+        "form": "2014-09-01",
+        "to": "2014-11-06"
+      },
+      "roles": [
+        "UI개발",
+        "유지보수"
+      ]
+    }
+  ],
+  "skills": {
+    "language": {
+      "title": "Language",
+      "list": [
+        {
+          "name": "HTML",
+          "image": "",
+          "percentage": 90
+        },
+        {
+          "name": "CSS",
+          "image": "",
+          "percentage": 90
+        },
+        {
+          "name": "JQuery",
+          "image": "",
+          "percentage": 80
+        },
+        {
+          "name": "JavaScript",
+          "image": "",
+          "percentage": 70
+        }
+      ]
+    },
+    "templateEngines": {
+      "title": "ViewTemplateEngines",
+      "list": [
+        {
+          "name": "Jade(Pug)",
+          "website": "https://github.com/pugjs/pug",
+          "description": "Template engine for Node.js",
+          "image": "",
+          "percentage": 85
+        },
+        {
+          "name": "Ejs",
+          "website": "https://github.com/mde/ejs",
+          "description": "Embedded JavaScript templates",
+          "image": "",
+          "percentage": 85
+        }
+      ]
+    },
+    "softwareTools": {
+      "title": "Software & Tools",
+      "list": [
+        {
+          "name": "Sublime Text",
+          "image": "",
+          "percentage": 80
+        },
+        {
+          "name": "Bootstrap",
+          "image": "",
+          "percentage": 60
+        },
+        {
+          "name": "Adobe Photoshop",
+          "image": "",
+          "percentage": 80
+        },
+        {
+          "name": "Adobe Illustrator",
+          "image": "",
+          "percentage": 80
+        },
+        {
+          "name": "Adobe Indesign",
+          "image": "",
+          "percentage": 90
+        }
+      ]
+    },
+    "versionControlSystem": {
+      "title": "Version Control System",
+      "list": [
+        {
+          "name": "git",
+          "image": "",
+          "percentage": 80
+        },
+        {
+          "name": "svn",
+          "image": "",
+          "percentage": 75
+        }
+      ]
+    }
+  }
 }
