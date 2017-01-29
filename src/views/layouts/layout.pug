@@ -1,0 +1,39 @@
+block variables
+doctype html
+html(lang="ko")
+  head
+    title= page.title ? page.title + ' - ' : 'CHASOOYOUNG'
+
+    block meta
+      meta(charset="utf-8")
+      meta(
+        name="author"
+        content="CHASOOYOUNG")
+
+      meta(
+        name="description"
+        content= page.description ? page.description : 'resume')
+
+      meta(
+        name="viewport"
+        content= page.viewport ? page.viewport : "width=device-width, initial-scale=1, user-scalable=no")
+
+      meta(
+        name="robots"
+        content="none")
+
+      meta(
+        name="format-detection"
+        content="telephone=no")
+
+    block css
+      link(
+        rel="stylesheet"
+        href="./styles/common.css")
+
+  body(id= page.bodyId)
+    block body
+
+    block scripts
+      script(src="./scripts/libs/jquery/jquery.js")
+      script(src="./scripts/common.js")
