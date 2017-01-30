@@ -1,7 +1,7 @@
 var gulp = require('gulp');
 var path = require('path');
 var fs = require('fs');
-
+var del = require('del');
 var connect = require('gulp-connect');
 var eslint = require('gulp-eslint');
 var data = require('gulp-data');
@@ -92,13 +92,7 @@ gulp.task('data_texts', function() {
 });
 
 gulp.task('clean', function() {
-  return gulp
-    .src(base.dist, {
-      read: false
-    })
-    .pipe(clean({
-      force: true
-    }));
+  return del.sync(base.dist);
 });
 
 gulp.task('watch', function () {
@@ -110,6 +104,7 @@ gulp.task('watch', function () {
 });
 
 gulp.task('build', [
+  'clean',
   'html',
   'images',
   'styles',
@@ -117,4 +112,4 @@ gulp.task('build', [
   'data_texts'
 ]);
 
-gulp.task('default', sequence('clean', 'build', 'server', 'watch'));
+gulp.task('default', sequence('build', 'server', 'watch'));
