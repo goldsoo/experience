@@ -28,9 +28,7 @@
   "engines": {
     "node": ">=6"
   },
-  "dependencies": {
-    "gulp": "^3.9.1"
-  },
+  "dependencies": {},
   "devDependencies": {
     "del": "^2.2.2",
     "gulp": "^3.9.1",
