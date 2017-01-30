@@ -11,6 +11,9 @@
     "resume",
     "history"
   ],
+  "scripts": {
+    "start": "gulp"
+  },
   "homepage": "https://github.com/goldsoo/experience",
   "repository": {
     "type": "git",
