@@ -109,13 +109,12 @@ gulp.task('watch', function () {
   gulp.watch(path.join(base.data, 'texts', '**/*.json'), ['data_texts']);
 });
 
-gulp.task('default', sequence('clean', [
+gulp.task('build', [
   'html',
   'images',
   'styles',
   'scripts',
   'data_texts'
-],
-  'server',
-  'watch'
-));
+]);
+
+gulp.task('default', sequence('clean', 'build', 'server', 'watch'));
