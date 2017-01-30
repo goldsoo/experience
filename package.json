@@ -6,6 +6,11 @@
   "author": "Cha Sooyoung <soo@chasooyoung.com>",
   "contributors": [],
   "main": "gulpfile.js",
+  "keywords": [
+    "experience",
+    "resume",
+    "history"
+  ],
   "repository": {
     "type": "git",
     "url": ""
