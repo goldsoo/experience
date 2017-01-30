@@ -1,0 +1,468 @@
+html {
+  background-color: #333;
+  color: #fff;
+}
+
+input,
+button {
+  -webkit-tap-highlight-color: transparent;
+  outline: none;
+}
+
+.container {
+  max-width: 89rem;
+  min-width: 32rem;
+  margin: 0 auto;
+  font-size: 1.4rem;
+}
+
+.topWrapper {
+  padding: 5rem 0 3rem;
+  border-bottom: 0.1rem dashed #999;
+  text-align: center;
+}
+
+.topWrapper .img {
+  box-sizing: border-box;
+  display: inline-block;
+  width: 9rem;
+  height: 9rem;
+  margin-bottom: 1rem;
+  border: 0.5rem solid #71acbc;
+  border-radius: 50%;
+  background-color: #eee;
+  overflow: hidden;
+  text-align: center;
+}
+
+.topWrapper .img img {
+  width: 100%;
+  margin-top: -1.2rem;
+  -o-object-fit: cover;
+  object-fit: cover;
+}
+
+.topWrapper .messageWrapper {
+  font-size: 1.8rem;
+  padding-bottom: 2rem;
+}
+
+.topWrapper .infoWrap .row + .row {
+  margin-top: .6rem;
+}
+
+.topWrapper .infoWrap .row + .row:last-child {
+  margin-top: .8rem;
+}
+
+.topWrapper .infoWrap .row .part {
+  display: inline-block;
+}
+
+.topWrapper .infoWrap .row .part + .part {
+  padding-left: 2rem;
+}
+
+.topWrapper .infoWrap .row .part dfn {
+  padding-right: .6rem;
+  font-size: 1.2rem;
+  color: #999;
+}
+
+.topWrapper .infoWrap .row .part .detail {
+  color: #fff;
+}
+
+.contentsWrapper {
+  padding: 3rem 0;
+}
+
+.contentsWrapper .educationWrapper {
+  padding-bottom: 2.8rem;
+}
+
+.contentsWrapper .educationWrapper h2 {
+  padding-bottom: .8rem;
+  font-size: 1.6rem;
+  font-weight: normal;
+  color: #333;
+}
+
+.contentsWrapper .educationWrapper h2 span {
+  padding: 0 .4rem;
+  background-color: #71acbc;
+}
+
+.contentsWrapper .educationWrapper .partWrap {
+  position: relative;
+  padding-top: 10rem;
+  border-bottom: 0.2rem solid #71acbc;
+}
+
+.contentsWrapper .educationWrapper .partWrap .part {
+  position: absolute;
+  bottom: -.8rem;
+}
+
+.contentsWrapper .educationWrapper .partWrap .part:after {
+  content: "";
+  display: block;
+  width: 1rem;
+  height: 1rem;
+  border-radius: 50%;
+  border: 0.2rem solid #71acbc;
+  background-color: #333;
+}
+
+.contentsWrapper .educationWrapper .partWrap .part.highSchool {
+  left: 5%;
+}
+
+.contentsWrapper .educationWrapper .partWrap .part.college {
+  left: 37%;
+}
+
+.contentsWrapper .educationWrapper .partWrap .part.university {
+  left: 70%;
+}
+
+.contentsWrapper .educationWrapper .partWrap .part .institution {
+  padding-bottom: .4rem;
+}
+
+.contentsWrapper .educationWrapper .partWrap .part .major,
+.contentsWrapper .educationWrapper .partWrap .part .gpa {
+  font-size: 1.2rem;
+}
+
+.contentsWrapper .educationWrapper .partWrap .part .period {
+  padding: 1rem 0 .2rem;
+  font-size: 1.2rem;
+  color: #999;
+}
+
+.contentsWrapper .careerWrapper {
+  padding-bottom: 2.8rem;
+}
+
+.contentsWrapper .careerWrapper h2 {
+  padding-bottom: .8rem;
+  font-size: 1.6rem;
+  font-weight: normal;
+  color: #333;
+}
+
+.contentsWrapper .careerWrapper h2 span {
+  padding: 0 .4rem;
+  background-color: #71acbc;
+}
+
+.contentsWrapper .careerWrapper .partWrap {
+  position: relative;
+  padding-top: 10rem;
+  border-bottom: 0.2rem solid #71acbc;
+}
+
+.contentsWrapper .careerWrapper .partWrap .part {
+  position: absolute;
+  bottom: -.8rem;
+}
+
+.contentsWrapper .careerWrapper .partWrap .part:after {
+  content: "";
+  display: block;
+  width: 1rem;
+  height: 1rem;
+  border-radius: 50%;
+  border: 0.2rem solid #71acbc;
+  background-color: #333;
+}
+
+.contentsWrapper .careerWrapper .partWrap .part.ako {
+  left: 5%;
+}
+
+.contentsWrapper .careerWrapper .partWrap .part.interpark {
+  left: 37%;
+}
+
+.contentsWrapper .careerWrapper .partWrap .part .company {
+  padding-bottom: .4rem;
+}
+
+.contentsWrapper .careerWrapper .partWrap .part .row {
+  font-size: 1.2rem;
+}
+
+.contentsWrapper .careerWrapper .partWrap .part .row .rank {
+  padding-left: .5rem;
+}
+
+.contentsWrapper .careerWrapper .partWrap .part .task {
+  font-size: 1.2rem;
+}
+
+.contentsWrapper .careerWrapper .partWrap .part .period {
+  padding: 1rem 0 .2rem;
+  font-size: 1.2rem;
+  color: #999;
+}
+
+.contentsWrapper .certificateWrapper,
+.contentsWrapper .educationCompletionWrapper,
+.contentsWrapper .awardsWrapper {
+  padding-bottom: 4.8rem;
+  font-size: 1.3rem;
+}
+
+.contentsWrapper .certificateWrapper h2,
+.contentsWrapper .educationCompletionWrapper h2,
+.contentsWrapper .awardsWrapper h2 {
+  padding-bottom: .4rem;
+  font-size: 1.6rem;
+  font-weight: normal;
+  color: #999;
+}
+
+.contentsWrapper .certificateWrapper .partWrap,
+.contentsWrapper .educationCompletionWrapper .partWrap,
+.contentsWrapper .awardsWrapper .partWrap {
+  border-top: 0.1rem solid #71acbc;
+  border-bottom: 0.1rem solid #71acbc;
+}
+
+.contentsWrapper .certificateWrapper .partWrap .part,
+.contentsWrapper .educationCompletionWrapper .partWrap .part,
+.contentsWrapper .awardsWrapper .partWrap .part {
+  display: table;
+  width: 100%;
+  table-layout: fixed;
+  padding: 1rem 0;
+}
+
+.contentsWrapper .certificateWrapper .partWrap .part + .part,
+.contentsWrapper .educationCompletionWrapper .partWrap .part + .part,
+.contentsWrapper .awardsWrapper .partWrap .part + .part {
+  border-top: 0.1rem solid rgba(153, 153, 153, 0.3);
+}
+
+.contentsWrapper .certificateWrapper .partWrap .part .col,
+.contentsWrapper .educationCompletionWrapper .partWrap .part .col,
+.contentsWrapper .awardsWrapper .partWrap .part .col {
+  display: table-cell;
+}
+
+.contentsWrapper .certificateWrapper .partWrap .part .col:first-child,
+.contentsWrapper .educationCompletionWrapper .partWrap .part .col:first-child,
+.contentsWrapper .awardsWrapper .partWrap .part .col:first-child {
+  width: 30%;
+}
+
+.contentsWrapper .skillsWrapper {
+  margin: 0 0 3.8rem;
+  padding: 4.8rem 0 1.8rem;
+  background-color: rgba(153, 153, 153, 0.1);
+}
+
+.contentsWrapper .skillsWrapper h2 {
+  padding-bottom: 1.8rem;
+  font-size: 1.6rem;
+  font-weight: normal;
+  color: #333;
+}
+
+.contentsWrapper .skillsWrapper h2 span {
+  padding: 0 .4rem;
+  background-color: rgba(153, 153, 153, 0.8);
+}
+
+.contentsWrapper .skillsWrapper .skillContentsWrap {
+  margin-left: 2rem;
+}
+
+.contentsWrapper .skillsWrapper .skillContentsWrap .partWrap {
+  display: table;
+  width: 100%;
+  table-layout: fixed;
+}
+
+.contentsWrapper .skillsWrapper .skillContentsWrap .part {
+  display: table-cell;
+  padding-right: 2rem;
+}
+
+.contentsWrapper .skillsWrapper .skillContentsWrap .title {
+  color: #71acbc;
+  padding-bottom: 1rem;
+}
+
+.contentsWrapper .skillsWrapper .skillContentsWrap .row {
+  width: 100%;
+  height: 1.8rem;
+  margin-top: 1rem;
+  background-color: rgba(153, 153, 153, 0.4);
+  box-shadow: inset 1px 1px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+}
+
+.contentsWrapper .skillsWrapper .skillContentsWrap .row:first-child {
+  margin-top: 0;
+}
+
+.contentsWrapper .skillsWrapper .skillContentsWrap .row span.name {
+  box-sizing: border-box;
+  display: block;
+  height: 100%;
+  padding-left: 1rem;
+  background-color: #71acbc;
+  -webkit-animation: slideIn 10s infinite;
+  animation: slideIn 10s infinite;
+  box-shadow: inset 0.1rem 0.1rem rgba(0, 0, 0, 0.2);
+  opacity: 0;
+  font-size: 1.2rem;
+}
+
+.contentsWrapper .skillsWrapper .skillContentsWrap .row span.name em {
+  display: inline-block;
+  padding-top: .2rem;
+  color: #333;
+}
+
+.contentsWrapper .skillsWrapper .skillContentsWrap .website,
+.contentsWrapper .skillsWrapper .skillContentsWrap .description {
+  display: none;
+  font-size: 1.2rem;
+  color: rgba(153, 153, 153, 0.8);
+}
+
+.contentsWrapper .experienceWrapper {
+  background-color: rgba(153, 153, 153, 0.1);
+}
+
+.contentsWrapper .experienceWrapper .partWrap {
+  padding: 1.5rem 2rem;
+  border-bottom: 0.1rem solid #333;
+}
+
+.contentsWrapper .experienceWrapper .projectWrap {
+  display: table;
+  width: 100%;
+  table-layout: fixed;
+  font-size: 1.2rem;
+}
+
+.contentsWrapper .experienceWrapper .projectWrap .col {
+  display: table-cell;
+}
+
+.contentsWrapper .experienceWrapper .projectWrap .col:first-child {
+  width: 25%;
+  vertical-align: middle;
+}
+
+.contentsWrapper .experienceWrapper .projectWrap .col:first-child + .col {
+  width: 60%;
+}
+
+.contentsWrapper .experienceWrapper .projectWrap a {
+  color: #71acbc;
+}
+
+.contentsWrapper .experienceWrapper .projectWrap a:hover {
+  text-decoration: underline;
+}
+
+.contentsWrapper .experienceWrapper .projectWrap .company {
+  padding-bottom: .2rem;
+  font-size: 1.2rem;
+  color: #999;
+}
+
+.contentsWrapper .experienceWrapper .projectWrap a.icon {
+  display: block;
+  width: 3rem;
+}
+
+.contentsWrapper .experienceWrapper .projectWrap a.icon img {
+  display: block;
+  width: 100%;
+}
+
+.contentsWrapper .experienceWrapper .projectWrap .appsWrap .row {
+  margin-right: 2rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.contentsWrapper .experienceWrapper .projectWrap .appsWrap .row + .row {
+  margin-top: 1rem;
+  padding-top: 1rem;
+  border-top: 0.1rem solid #333;
+}
+
+.contentsWrapper .experienceWrapper .projectWrap .appsWrap .typeWrap {
+  padding-bottom: 1rem;
+  color: #999;
+}
+
+.contentsWrapper .experienceWrapper .projectWrap .appsWrap .typeWrap dfn {
+  display: none;
+}
+
+.contentsWrapper .experienceWrapper .projectWrap .appsWrap .icon {
+  display: block;
+  padding-bottom: 1rem;
+}
+
+.contentsWrapper .experienceWrapper .projectWrap .appsWrap .url {
+  display: block;
+  padding-bottom: .4rem;
+}
+
+.contentsWrapper .experienceWrapper .projectWrap .appsWrap .description {
+  padding-bottom: 1rem;
+}
+
+.contentsWrapper .experienceWrapper .projectWrap .appsWrap .periodWrap {
+  padding-bottom: .4rem;
+}
+
+.contentsWrapper .experienceWrapper .projectWrap .appsWrap .periodWrap dfn:after,
+.contentsWrapper .experienceWrapper .projectWrap .appsWrap .vcsWrap dfn:after {
+  content: ":";
+  padding: 0 .4rem;
+}
+
+@-webkit-keyframes slideIn {
+  0% {
+    -webkit-transform: translateX(-100%);
+    transform: translateX(-100%);
+    opacity: 1;
+  }
+  10% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes slideIn {
+  0% {
+    -webkit-transform: translateX(-100%);
+    transform: translateX(-100%);
+    opacity: 1;
+  }
+  10% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+  }
+}
