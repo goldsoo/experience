@@ -12,7 +12,8 @@
     "history"
   ],
   "scripts": {
-    "start": "gulp"
+    "start": "gulp",
+    "deploy": "gulp deploy"
   },
   "homepage": "https://github.com/goldsoo/experience",
   "repository": {
