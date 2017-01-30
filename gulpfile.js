@@ -11,6 +11,9 @@ var autoprefixer = require('gulp-autoprefixer');
 var pug = require('gulp-pug');
 var cached = require('gulp-cached');
 var sequence = require('gulp-sequence');
+var deploy = require('gulp-deploy-git');
+var moment = require('moment');
+var site = JSON.parse(fs.readFileSync('./package.json'));
 
 var base = {
   data: 'data',
@@ -110,5 +113,23 @@ gulp.task('build', [
   'scripts',
   'data_texts'
 ]);
+
+gulp.task('deploy', function() {
+  var opts = {
+    src: {
+      read: false
+    },
+    deploy: {
+      repository: site.repository.url,
+      prefix: base.dist,
+      remoteBranch: 'gh-pages',
+      message: 'Update ' + moment().format('MMMM Do YYYY, h:mm:ss a')
+    }
+  };
+
+  return gulp
+    .src(path.join(base.dist, '**/*'), opts.src)
+    .pipe(deploy(opts.deploy));
+});
 
 gulp.task('default', sequence('build', 'server', 'watch'));
