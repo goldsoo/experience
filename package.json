@@ -1,7 +1,7 @@
 {
-  "name": "CHASOOYOUNG",
+  "name": "experience",
   "version": "0.0.0",
-  "description": "Chasooyoung Resume",
+  "description": "Work experience",
   "website": "chasooyoung.com",
   "author": "Cha Soo Young <soo@chasooyoung.com>",
   "main": "gulpfile.js",
