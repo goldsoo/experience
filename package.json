@@ -15,6 +15,10 @@
   "repository": {
     "type": "git",
     "url": "https://github.com/goldsoo/experience.git"
+  "bugs": {
+    "url": "https://github.com/goldsoo/experience/issues",
+    "email": "soo@chasooyoung.com"
+  },
   "license": "UNLICENSED",
   "private": true,
   },
