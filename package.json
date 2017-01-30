@@ -4,6 +4,7 @@
   "description": "Work experience",
   "website": "chasooyoung.com",
   "author": "Cha Sooyoung <soo@chasooyoung.com>",
+  "contributors": [],
   "main": "gulpfile.js",
   "repository": {
     "type": "git",
