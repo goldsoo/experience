@@ -120,7 +120,7 @@
           },
           {
             "type": "Mobile Website",
-            "icon": "/images/appIcon/shopping.png",
+            "icon": "./images/appIcon/shopping.png",
             "url": "http://m.shop.interpark.com",
             "appUrl": "https://play.google.com/store/apps/details?id=com.interpark.shop",
             "description": "메인, 홈구성, 카테고리, 검색, 주문서 개편, 톡집사 신규",
@@ -145,7 +145,7 @@
         "apps": [
           {
             "type": "Mobile Website",
-            "icon": "/images/appIcon/pet.png",
+            "icon": "./images/appIcon/pet.png",
             "appUrl": "https://play.google.com/store/apps/details?id=com.interpark.pet",
             "description": "신규 구축(이지리오더, 장바구니, 주문서, 톡집사 등), 참여율 30%",
             "period": {
@@ -209,7 +209,7 @@
           },
           {
             "type": "Mobile Website",
-            "icon": "/images/appIcon/seller.png",
+            "icon": "./images/appIcon/seller.png",
             "appUrl": "https://play.google.com/store/apps/details?id=com.interpark.sellermanager",
             "description": "신규구축(메인, 조회리스트 등), 참여율 30%",
             "period": {
