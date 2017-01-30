@@ -12,6 +12,7 @@ var pug = require('gulp-pug');
 var cached = require('gulp-cached');
 var sequence = require('gulp-sequence');
 var deploy = require('gulp-deploy-git');
+var argv = require('yargs').argv;
 var moment = require('moment');
 var site = JSON.parse(fs.readFileSync('./package.json'));
 
@@ -123,7 +124,7 @@ gulp.task('deploy', function() {
       repository: site.repository.url,
       prefix: base.dist,
       remoteBranch: 'gh-pages',
-      message: 'Update ' + moment().format('MMMM Do YYYY, h:mm:ss a')
+      message: argv.m || 'Update ' + moment().format('MMMM Do YYYY, h:mm:ss a')
     }
   };
 
