@@ -10,7 +10,6 @@ var sassLint = require('gulp-sass-lint');
 var autoprefixer = require('gulp-autoprefixer');
 var pug = require('gulp-pug');
 var cached = require('gulp-cached');
-var clean = require('gulp-clean');
 var sequence = require('gulp-sequence');
 
 var base = {
