@@ -34,7 +34,7 @@ gulp.task('scripts', function() {
     .pipe(cached(dir))
     .pipe(eslint())
     .pipe(eslint.format())
-    .pipe(gulp.dest(path.join(base.dist, dir)))
+    .pipe(gulp.dest(path.join(base.dist, dir)));
 });
 
 gulp.task('images', function() {
@@ -62,7 +62,7 @@ gulp.task('styles', function() {
     .pipe(autoprefixer({
       cascade: false
     }))
-    .pipe(gulp.dest(path.join(base.dist, dir)))
+    .pipe(gulp.dest(path.join(base.dist, dir)));
 });
 
 gulp.task('html', function buildHTML() {
@@ -115,7 +115,7 @@ gulp.task('default', sequence('clean', [
   'styles',
   'scripts',
   'data_texts'
-  ],
+],
   'server',
   'watch'
 ));
