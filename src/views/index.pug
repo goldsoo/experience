@@ -28,11 +28,15 @@ block body
         .part
           dt
             abbr(title= 'mobile') m
-          dd= data.basics.phone.mobile
+          dd
+            a(href= 'tel:' + data.basics.phone.mobile)
+              = data.basics.phone.mobile
 
         .part
           dt e-mail
-          dd= data.basics.email
+          dd
+            a(href= 'mailto:' + data.basics.email)
+              = data.basics.email
 
         .part
           dt website
