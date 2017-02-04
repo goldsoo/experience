@@ -6,7 +6,9 @@ block append variables
     page.bodyId = 'resume';
 
 block append styles
-  link(rel="stylesheet" href="./styles/index.css")
+  link(
+    rel= 'stylesheet'
+    href= './styles/index.css')
 
 block body
   .container
@@ -31,11 +33,11 @@ block body
         .row
           .part
             dfn website.
-            a.detail(href= 'https://' + data.basics.website target="_blank")
+            a.detail(href= 'https://' + data.basics.website target= '_blank')
               = data.basics.website
           .part
             dfn github.
-            a.detail(href= 'https://' + data.basics.github target="_blank")
+            a.detail(href= 'https://' + data.basics.github target= '_blank')
               = data.basics.github
 
         .row
@@ -89,7 +91,7 @@ block body
                   each $apps in $experience.project.apps
                     .row
                       if $apps.type === 'Mobile Website' && $apps.icon
-                        a.icon(href= $apps.appUrl target="_blank")
+                        a.icon(href= $apps.appUrl target= '_blank')
                           img(src= $apps.icon alt= $experience.project.name)
                       else
                         .typeWrap
@@ -97,7 +99,7 @@ block body
                           span.type= $apps.type
 
                       if $apps.url
-                        a.url(href= $apps.url target="_blank")
+                        a.url(href= $apps.url target= '_blank')
                           = $apps.url
 
                       .description

@@ -2,40 +2,40 @@ block variables
   - var page = {};
 
 doctype html
-html(lang="ko")
+html(lang= 'ko')
   head
     title= page.title ? page.title + ' - ' : 'CHASOOYOUNG'
 
     block meta
-      meta(charset="utf-8")
+      meta(charset= 'utf-8')
       meta(
-        name="author"
+        name= 'author'
         content= site.author.name)
 
       meta(
-        name="description"
+        name= 'description'
         content= page.description ? page.description : 'resume')
 
       meta(
-        name="viewport"
-        content= page.viewport ? page.viewport : "width=device-width, initial-scale=1, user-scalable=no")
+        name= 'viewport'
+        content= page.viewport ? page.viewport : 'width=device-width, initial-scale=1, user-scalable=no')
 
       meta(
-        name="robots"
-        content="none")
+        name= 'robots'
+        content= 'none')
 
       meta(
-        name="format-detection"
-        content="telephone=no")
+        name= 'format-detection'
+        content= 'telephone=no')
 
     block styles
       link(
-        rel="stylesheet"
-        href="./styles/common.css")
+        rel= 'stylesheet'
+        href= './styles/common.css')
 
   body(id= page.bodyId)
     block body
 
     block scripts
-      script(src="./scripts/libs/jquery/jquery.js")
-      script(src="./scripts/common.js")
+      script(src= './scripts/libs/jquery/jquery.js')
+      script(src= './scripts/common.js')
