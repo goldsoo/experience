@@ -12,7 +12,7 @@ block append styles
 
 block body
   .container
-    .topWrapper
+    header.topWrapper
       .photo
         img(
           src= data.basics.picture
@@ -71,7 +71,7 @@ block body
               target= '_blank')
               = data.basics.location.koreaAddress
 
-    .contentsWrapper
+    main.contentsWrapper
       .history.educationWrapper
         h2
           span 학력
