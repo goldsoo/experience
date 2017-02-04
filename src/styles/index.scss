@@ -55,31 +55,22 @@ button {
     }
 
     .infoWrap {
-        .row {
-            + .row {
-                margin-top: .6rem;
+        max-width: 55rem;
+        margin: 0 auto;
 
-                &:last-child {
-                    margin-top: .8rem;
-                }
+        .part {
+            display: inline-block;
+            margin: .3rem 0;
+            padding: 0 1rem;
+
+            dfn {
+                padding-right: .6rem;
+                font-size: 1.2rem;
+                color: $sub-color;
             }
 
-            .part {
-                display: inline-block;
-
-                + .part {
-                    padding-left: 2rem;
-                }
-
-                dfn {
-                    padding-right: .6rem;
-                    font-size: 1.2rem;
-                    color: $sub-color;
-                }
-
-                .detail {
-                    color: $base-font-color;
-                }
+            .detail {
+                color: $base-font-color;
             }
         }
     }

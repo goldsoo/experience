@@ -21,36 +21,35 @@ block body
       h1.messageWrapper= site.author.name
 
       .infoWrap
-        .row
-          .part
-            dfn name.
-            span.detail= data.basics.name.korean
-          .part
-            dfn m.
-            span.detail= data.basics.phone.handPhone
-          .part
-            dfn e-mail.
-            span.detail= data.basics.email
+        .part
+          dfn name.
+          span.detail= data.basics.name.korean
 
-        .row
-          .part
-            dfn website.
-            a.detail(
-              href= 'https://' + data.basics.website
-              target= '_blank')
-              = data.basics.website
+        .part
+          dfn m.
+          span.detail= data.basics.phone.handPhone
 
-          .part
-            dfn github.
-            a.detail(
-              href= 'https://' + data.basics.github
-              target= '_blank')
-              = data.basics.github
+        .part
+          dfn e-mail.
+          span.detail= data.basics.email
 
-        .row
-          .part
-            dfn addr.
-            span.detail= data.basics.location.koreaAddress
+        .part
+          dfn website.
+          a.detail(
+            href= 'https://' + data.basics.website
+            target= '_blank')
+            = data.basics.website
+
+        .part
+          dfn github.
+          a.detail(
+            href= 'https://' + data.basics.github
+            target= '_blank')
+            = data.basics.github
+
+        .part
+          dfn addr.
+          span.detail= data.basics.location.koreaAddress
 
     .contentsWrapper
       .educationWrapper
