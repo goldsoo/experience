@@ -89,7 +89,13 @@ block body
                   dd.gpa= $education.gpa
 
                 dd.period
-                  = $education.startDate + ' ~ ' + $education.endDate
+                  if $education.startDate
+                    time(datetime= $education.startDate)= $education.startDate
+
+                  = ' ~ '
+
+                  if $education.endDate
+                    time(datetime= $education.endDate)= $education.endDate
 
       .careerWrapper
         h2
@@ -104,7 +110,14 @@ block body
                   span.department= $career.department
                   span.rank= $career.rank
                 dd.task= $career.task
-                dd.period= $career.startDate + ' ~ ' + $career.endDate
+                dd.period
+                  if $career.startDate
+                    time(datetime= $career.startDate)= $career.startDate
+
+                  = ' ~ '
+
+                  if $career.endDate
+                    time(datetime= $career.endDate)= $career.endDate
 
       .experienceWrapper
         each $experience in data.experience
