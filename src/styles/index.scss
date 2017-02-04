@@ -29,13 +29,12 @@ button {
     border-bottom: .1rem dashed $sub-color;
     text-align: center;
 
-    .img {
+    .photo {
         box-sizing: border-box;
         display: inline-block;
         width: 9rem;
         height: 9rem;
         margin-bottom: 1rem;
-        border: .5rem solid $point-color;
         border-radius: 50%;
         background-color: #eee;
         overflow: hidden;
