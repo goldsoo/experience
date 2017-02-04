@@ -68,6 +68,10 @@ button {
                 padding-right: .6rem;
                 font-size: 1.2rem;
                 color: $sub-color;
+
+                &::after {
+                    content: ".";
+                }
             }
 
             dd {
