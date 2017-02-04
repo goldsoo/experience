@@ -127,6 +127,10 @@ button {
                     background-color: $bg-color;
                 }
 
+                dt {
+                    display: none;
+                }
+
                 &.highSchool {
                     left: 5%;
                 }
@@ -189,6 +193,10 @@ button {
                     border-radius: 50%;
                     border: .2rem solid $point-color;
                     background-color: $bg-color;
+                }
+
+                dt {
+                    display: none;
                 }
 
                 &.ako {

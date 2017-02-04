@@ -80,14 +80,18 @@ block body
           each $education in data.education
             li.part(class= $education.grade)
               dl
-                dt.institution= $education.institution
+                dt 학교명
+                dd.institution= $education.institution
 
                 if $education.major
+                  dt 전공
                   dd.major= $education.major
 
                 if $education.gpa
+                  dt 취득 학점
                   dd.gpa= $education.gpa
 
+                dt 교육 기간
                 dd.period
                   if $education.startDate
                     time(datetime= $education.startDate)= $education.startDate
@@ -105,11 +109,18 @@ block body
           each $career in data.career
             li.part(class= $career.label)
               dl
-                dt.company= $career.company
+                dt 회사명
+                dd.company= $career.company
+
+                dt 소속 부서 및 직급
                 dd.row
                   span.department= $career.department
                   span.rank= $career.rank
+
+                dt 역할
                 dd.task= $career.task
+
+                dt 기간
                 dd.period
                   if $career.startDate
                     time(datetime= $career.startDate)= $career.startDate
