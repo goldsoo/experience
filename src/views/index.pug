@@ -79,16 +79,17 @@ block body
         ol.partWrap
           each $education in data.education
             li.part(class= $education.grade)
-              .institution= $education.institution
+              dl
+                dt.institution= $education.institution
 
-              if $education.major
-                .major= $education.major
+                if $education.major
+                  dd.major= $education.major
 
-              if $education.gpa
-                .gpa= $education.gpa
+                if $education.gpa
+                  dd.gpa= $education.gpa
 
-              .period
-                = $education.startDate + ' ~ ' + $education.endDate
+                dd.period
+                  = $education.startDate + ' ~ ' + $education.endDate
 
       .careerWrapper
         h2
@@ -97,12 +98,13 @@ block body
         ol.partWrap
           each $career in data.career
             li.part(class= $career.label)
-              .company= $career.company
-              .row
-                span.department= $career.department
-                span.rank= $career.rank
-              .task= $career.task
-              .period= $career.startDate + ' ~ ' + $career.endDate
+              dl
+                dt.company= $career.company
+                dd.row
+                  span.department= $career.department
+                  span.rank= $career.rank
+                dd.task= $career.task
+                dd.period= $career.startDate + ' ~ ' + $career.endDate
 
       .experienceWrapper
         each $experience in data.experience
