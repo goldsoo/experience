@@ -42,17 +42,17 @@ block body
           dt website
           dd
             a(
-              href= 'https://' + data.basics.website
+              href= data.basics.website
               target= '_blank')
-              = data.basics.website
+              = data.basics.website.replace(/^https?:\/\//, '')
 
         .part
           dt github
           dd
             a(
-              href= 'https://' + data.basics.github
+              href= data.basics.github
               target= '_blank')
-              = data.basics.github
+              = data.basics.github.replace(/^https?:\/\//, '')
 
         .part
           dt
