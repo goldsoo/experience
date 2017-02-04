@@ -32,8 +32,8 @@ button {
     .photo {
         box-sizing: border-box;
         display: inline-block;
-        width: 9rem;
-        height: 9rem;
+        width: 11rem;
+        height: 11rem;
         margin-bottom: 1rem;
         border-radius: 50%;
         background-color: #eee;
@@ -103,7 +103,7 @@ button {
             color: $bg-color;
 
             span {
-                padding: .1rem .8rem;
+                padding: .1 rem .8rem;
                 background-color: $point-color;
             }
         }
