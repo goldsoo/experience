@@ -14,7 +14,7 @@ block body
   .container
     .topWrapper
       .img
-        img(src= basics.picture alt= basics.name.korea)
+        img(src= data.basics.picture alt= data.basics.name.korea)
       .messageWrapper
         | Hello, I'm Cha Sooyoung
 
@@ -22,28 +22,28 @@ block body
         .row
           .part
             dfn name.
-            span.detail= basics.name.korea
+            span.detail= data.basics.name.korea
           .part
             dfn m.
-            span.detail= basics.phone.handPhone
+            span.detail= data.basics.phone.handPhone
           .part
             dfn e-mail.
-            span.detail= basics.email
+            span.detail= data.basics.email
 
         .row
           .part
             dfn website.
-            a.detail(href= 'https://' + basics.website target="_blank")
-              = basics.website
+            a.detail(href= 'https://' + data.basics.website target="_blank")
+              = data.basics.website
           .part
             dfn github.
-            a.detail(href= 'https://' + basics.github target="_blank")
-              = basics.github
+            a.detail(href= 'https://' + data.basics.github target="_blank")
+              = data.basics.github
 
         .row
           .part
             dfn addr.
-            span.detail= basics.location.koreaAddress
+            span.detail= data.basics.location.koreaAddress
 
     .contentsWrapper
       .educationWrapper
@@ -51,7 +51,7 @@ block body
           span 학력
 
         .partWrap
-          each $education in education
+          each $education in data.education
             .part(class= $education.grade)
               .institution= $education.institution
 
@@ -69,7 +69,7 @@ block body
           span 경력
 
         .partWrap
-          each $career in career
+          each $career in data.career
             .part(class= $career.label)
               .company= $career.company
               .row
@@ -79,7 +79,7 @@ block body
               .period= $career.startDate + ' ~ ' + $career.endDate
 
       .experienceWrapper
-        each $experience in experience
+        each $experience in data.experience
           .partWrap
             .projectWrap
               .col
@@ -124,17 +124,17 @@ block body
         .skillContentsWrap
           .partWrap
             .part.language
-              .title= skills.language.title
+              .title= data.skills.language.title
               .listWrap
-                each $list in skills.language.list
+                each $list in data.skills.language.list
                   .row
                     span.name(style= 'width:' +  $list.percentage + '%')
                       em= $list.name + ' ' + $list.percentage + '%'
 
             .part.templateEngines
-              .title= skills.templateEngines.title
+              .title= data.skills.templateEngines.title
               .listWrap
-                each $list in skills.templateEngines.list
+                each $list in data.skills.templateEngines.list
                   .row
                     span.name(style= 'width:' +  $list.percentage + '%')
                       em= $list.name + ' ' + $list.percentage + '%'
@@ -142,17 +142,17 @@ block body
                   .description= $list.description
 
             .part.softwareTools
-              .title= skills.softwareTools.title
+              .title= data.skills.softwareTools.title
               .listWrap
-                each $list in skills.softwareTools.list
+                each $list in data.skills.softwareTools.list
                   .row
                     span.name(style= 'width:' +  $list.percentage + '%')
                       em= $list.name + ' ' + $list.percentage + '%'
 
             .part.versionControlSystem
-              .title= skills.versionControlSystem.title
+              .title= data.skills.versionControlSystem.title
               .listWrap
-                each $list in skills.versionControlSystem.list
+                each $list in data.skills.versionControlSystem.list
                   .row
                     span.name(style= 'width:' +  $list.percentage + '%')
                       em= $list.name + ' ' + $list.percentage + '%'
@@ -161,7 +161,7 @@ block body
         h2 자격증
 
         .partWrap
-          each $certificate in certificate
+          each $certificate in data.certificate
             .part
               .col.name= $certificate.name
               .col.acquireDate= $certificate.acquireDate
@@ -170,7 +170,7 @@ block body
         h2 교육이수
 
         .partWrap
-          each $educationCompletion in educationCompletion
+          each $educationCompletion in data.educationCompletion
             .part
               .col.institution= $educationCompletion.institution
               .col.period
@@ -182,7 +182,7 @@ block body
         h2 수상
 
         .partWrap
-          each $awards in awards
+          each $awards in data.awards
             .part
               .col.title= $awards.title
               .col.date= $awards.date

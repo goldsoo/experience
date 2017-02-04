@@ -81,7 +81,10 @@ gulp.task('html', function buildHTML() {
     .pipe(pug({
       pretty: true,
       basedir: path.join(base.src, 'views'),
-      locals: data
+      locals: {
+        site: site,
+        data: data
+      }
     }))
     .pipe(gulp.dest(path.join(base.dist)));
 });
