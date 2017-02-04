@@ -93,7 +93,7 @@ button {
 .contentsWrapper {
     padding: 3rem 0;
 
-    .educationWrapper {
+    .history {
         padding-bottom: 2.8rem;
 
         h2 {
@@ -127,105 +127,39 @@ button {
                     background-color: $bg-color;
                 }
 
-                dt {
-                    display: none;
-                }
-
-                &.highSchool {
+                &:nth-child(1) {
                     left: 5%;
                 }
 
-                &.college {
+                &:nth-child(2) {
                     left: 37%;
                 }
 
-                &.university {
+                &:nth-child(3) {
                     left: 70%;
                 }
 
-                .institution {
-                    padding-bottom: .4rem;
-                }
-
-                .major,
-                .gpa {
-                    font-size: 1.2rem;
-                }
-
-                .period {
-                    padding: 1rem 0 .2rem;
-                    font-size: 1.2rem;
-                    color: $sub-color;
-                }
-            }
-        }
-    }
-
-    .careerWrapper {
-        padding-bottom: 2.8rem;
-
-        h2 {
-            padding-bottom: .8rem;
-            font-size: 1.6rem;
-            font-weight: normal;
-            color: $bg-color;
-
-            span {
-                padding: 0 .4rem;
-                background-color: $point-color;
-            }
-        }
-
-        .partWrap {
-            position: relative;
-            padding-top: 10rem;
-            border-bottom: .2rem solid $point-color;
-
-            .part {
-                position: absolute;
-                bottom: -.8rem;
-
-                &:after {
-                    content: "";
-                    display: block;
-                    width: 1rem;
-                    height: 1rem;
-                    border-radius: 50%;
-                    border: .2rem solid $point-color;
-                    background-color: $bg-color;
-                }
-
                 dt {
                     display: none;
                 }
 
-                &.ako {
-                    left: 5%;
-                }
+                dd {
+                    font-size: 1.2rem;
 
-                &.interpark {
-                    left: 37%;
-                }
-
-                .company {
-                    padding-bottom: .4rem;
+                    &:first-of-type {
+                        padding-bottom: .4rem;
+                        font-size: 1.4rem;
+                    }
                 }
 
                 .row {
-                    font-size: 1.2rem;
-
                     .rank {
                         padding-left: .5rem;
                     }
                 }
 
-                .task {
-                    font-size: 1.2rem;
-                }
-
                 .period {
                     padding: 1rem 0 .2rem;
-                    font-size: 1.2rem;
                     color: $sub-color;
                 }
             }
