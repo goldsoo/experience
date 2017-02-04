@@ -72,7 +72,7 @@ block body
               = data.basics.location.koreaAddress
 
     main.contentsWrapper
-      .history.educationWrapper
+      section.history.educationWrapper
         h2
           span 학력
 
@@ -102,7 +102,7 @@ block body
                   if $education.endDate
                     time(datetime= $education.endDate)= $education.endDate
 
-      .history.careerWrapper
+      section.history.careerWrapper
         h2
           span 경력
 
@@ -131,7 +131,9 @@ block body
                   if $career.endDate
                     time(datetime= $career.endDate)= $career.endDate
 
-      .experienceWrapper
+      section.experienceWrapper
+        h2 상세 경력
+
         each $experience in data.experience
           .partWrap
             .projectWrap
@@ -176,7 +178,7 @@ block body
                 each $roles in $experience.roles
                   .roles= $roles
 
-      .skillsWrapper
+      section.skillsWrapper
         h2
           span 스킬
 
@@ -216,7 +218,7 @@ block body
                     span.name(style= 'width:' +  $list.percentage + '%')
                       em= $list.name + ' ' + $list.percentage + '%'
 
-      .certificateWrapper
+      section.certificateWrapper
         h2 자격증
 
         .partWrap
@@ -225,7 +227,7 @@ block body
               .col.name= $certificate.name
               .col.acquireDate= $certificate.acquireDate
 
-      .educationCompletionWrapper
+      section.educationCompletionWrapper
         h2 교육이수
 
         .partWrap
@@ -237,7 +239,7 @@ block body
               .col.name= $educationCompletion.name
               .col.label= $educationCompletion.label
 
-      .awardsWrapper
+      section.awardsWrapper
         h2 수상
 
         .partWrap
