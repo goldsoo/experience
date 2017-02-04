@@ -63,14 +63,24 @@ button {
             margin: .3rem 0;
             padding: 0 1rem;
 
-            dfn {
+            dt {
+                display: inline-block;
                 padding-right: .6rem;
                 font-size: 1.2rem;
                 color: $sub-color;
             }
 
-            .detail {
+            dd {
+                display: inline-block;
                 color: $base-font-color;
+
+                a {
+                    color: $base-font-color;
+
+                    &:hover {
+                        text-decoration: underline;
+                    }
+                }
             }
         }
     }
