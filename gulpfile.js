@@ -49,6 +49,15 @@ gulp.task('images', function() {
     .pipe(gulp.dest(path.join(base.dist, dir)));
 });
 
+gulp.task('fonts', function() {
+  var dir = 'fonts';
+
+  return gulp
+    .src(path.join(base.src, dir, '**/*.{ttf,oft,woff,woff2}'))
+    .pipe(cached(dir))
+    .pipe(gulp.dest(path.join(base.dist, dir)));
+});
+
 gulp.task('styles', function() {
   var dir = 'styles';
 
@@ -104,6 +113,7 @@ gulp.task('build', [
   'clean',
   'html',
   'images',
+  'fonts',
   'styles',
   'scripts'
 ]);
