@@ -3,7 +3,10 @@
   "version": "0.0.0",
   "description": "Work experience",
   "website": "chasooyoung.com",
-  "author": "Cha Sooyoung <soo@chasooyoung.com>",
+  "author": {
+    "name": "Cha Sooyoung",
+    "email": "soo@chasooyoung.com"
+  },
   "contributors": [],
   "main": "gulpfile.js",
   "keywords": [
