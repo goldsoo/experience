@@ -4,7 +4,7 @@ block variables
 doctype html
 html(lang= 'ko')
   head
-    title= page.title ? page.title + ' - ' : 'CHASOOYOUNG'
+    title= page.title || site.title
 
     block meta
       meta(charset= 'utf-8')
