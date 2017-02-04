@@ -85,15 +85,6 @@ gulp.task('html', function buildHTML() {
     .pipe(gulp.dest(path.join(base.dist)));
 });
 
-gulp.task('data_texts', function() {
-  var dir = 'texts';
-
-  return gulp
-    .src(path.join(base.data, dir, '**/*.json'))
-    .pipe(cached('data-' + dir))
-    .pipe(gulp.dest(path.join(base.dist, base.data, dir)));
-});
-
 gulp.task('clean', function() {
   return del.sync(base.dist);
 });
@@ -103,7 +94,6 @@ gulp.task('watch', function () {
   gulp.watch(path.join(base.src, 'views', '**/*.pug'), ['html']);
   gulp.watch(path.join(base.src, 'scripts', '**/*.js'), ['scripts']);
   gulp.watch(path.join(base.src, 'images', '**/*.{png,jpg,gif,jpeg}'), ['images']);
-  gulp.watch(path.join(base.data, 'texts', '**/*.json'), ['data_texts']);
 });
 
 gulp.task('build', [
@@ -111,8 +101,7 @@ gulp.task('build', [
   'html',
   'images',
   'styles',
-  'scripts',
-  'data_texts'
+  'scripts'
 ]);
 
 gulp.task('deploy', function() {
