@@ -76,9 +76,9 @@ block body
         h2
           span 학력
 
-        .partWrap
+        ol.partWrap
           each $education in data.education
-            .part(class= $education.grade)
+            li.part(class= $education.grade)
               .institution= $education.institution
 
               if $education.major
@@ -94,9 +94,9 @@ block body
         h2
           span 경력
 
-        .partWrap
+        ol.partWrap
           each $career in data.career
-            .part(class= $career.label)
+            li.part(class= $career.label)
               .company= $career.company
               .row
                 span.department= $career.department
