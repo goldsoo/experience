@@ -15,7 +15,6 @@ var deploy = require('gulp-deploy-git');
 var argv = require('yargs').argv;
 var moment = require('moment');
 var site = JSON.parse(fs.readFileSync('./package.json'));
-var data = JSON.parse(fs.readFileSync('./data/data.json'));
 
 var base = {
   data: 'data',
@@ -71,13 +70,13 @@ gulp.task('styles', function() {
 
 gulp.task('html', function buildHTML() {
   var dir = 'views';
+  var data = JSON.parse(fs.readFileSync('./data/data.json'));
 
   return gulp
     .src([
       path.join(base.src, dir, '**/*.pug'),
       path.join('!' + base.src, dir, 'layouts/*.pug')
     ])
-    .pipe(cached(dir))
     .pipe(pug({
       pretty: true,
       basedir: path.join(base.src, 'views'),
@@ -96,6 +95,7 @@ gulp.task('clean', function() {
 gulp.task('watch', function () {
   gulp.watch(path.join(base.src, 'styles', '**/*.scss'), ['styles']);
   gulp.watch(path.join(base.src, 'views', '**/*.pug'), ['html']);
+  gulp.watch(path.join(base.data, '**/*.json'), ['html']);
   gulp.watch(path.join(base.src, 'scripts', '**/*.js'), ['scripts']);
   gulp.watch(path.join(base.src, 'images', '**/*.{png,jpg,gif,jpeg}'), ['images']);
 });
