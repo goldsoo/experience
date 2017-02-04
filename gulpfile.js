@@ -15,6 +15,7 @@ var deploy = require('gulp-deploy-git');
 var argv = require('yargs').argv;
 var moment = require('moment');
 var site = JSON.parse(fs.readFileSync('./package.json'));
+var data = JSON.parse(fs.readFileSync('./data/data.json'));
 
 var base = {
   data: 'data',
@@ -80,7 +81,7 @@ gulp.task('html', function buildHTML() {
     .pipe(pug({
       pretty: true,
       basedir: path.join(base.src, 'views'),
-      locals: require('./data/texts/resume.json')
+      locals: data
     }))
     .pipe(gulp.dest(path.join(base.dist)));
 });
