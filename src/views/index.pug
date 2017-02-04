@@ -1,11 +1,9 @@
 extends /layouts/layout.pug
 
-block variables
+block append variables
   -
-    var page = {
-      title: 'Chasooyoung Resume',
-      bodyId: 'resume'
-    }
+    page.title = 'Chasooyoung Resume';
+    page.bodyId = 'resume';
 
 block append styles
   link(rel="stylesheet" href="./styles/index.css")
