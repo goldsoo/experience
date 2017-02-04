@@ -169,6 +169,19 @@ button {
                     }
                 }
 
+                .gpa {
+                    padding-top: .5rem;
+
+                    span {
+                        background-color: #eee;
+                        border: .1rem solid #ddd;
+                        border-radius: .5rem;
+                        padding: 0 .4rem;
+                        font-size: 1.1rem;
+                        color: #666;
+                    }
+                }
+
                 .period {
                     padding: 1rem 0 .2rem;
                     color: $sub-color;
