@@ -57,7 +57,19 @@ block body
         .part
           dt
             abbr(title= 'address') addr
-          dd= data.basics.location.koreaAddress
+          dd
+            -
+              var googleMapUrl = [
+                'https://maps.google.com/?q=',
+                data.basics.location.coordinates.latitude,
+                ',',
+                data.basics.location.coordinates.longitude
+              ].join('');
+
+            a(
+              href= googleMapUrl
+              target= '_blank')
+              = data.basics.location.koreaAddress
 
     .contentsWrapper
       .educationWrapper

@@ -17,7 +17,11 @@
       "address": "Mapo Raemian Prugio, 195, Mapo-daero, Mapo-gu",
       "postalCode": "04129",
       "city": "Seoul",
-      "countryCode": "Rep. of KOREA"
+      "countryCode": "Rep. of KOREA",
+      "coordinates": {
+        "latitude": "37.555499",
+        "longitude": "126.953611"
+      }
     }
   },
   "education": [
