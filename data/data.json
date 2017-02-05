@@ -270,8 +270,9 @@
       ]
     }
   ],
-  "skills": {
-    "language": {
+  "skills": [
+    {
+      "label": "language",
       "title": "Language",
       "list": [
         {
@@ -296,7 +297,8 @@
         }
       ]
     },
-    "templateEngines": {
+    {
+      "label": "templateEngines",
       "title": "ViewTemplateEngines",
       "list": [
         {
@@ -315,7 +317,8 @@
         }
       ]
     },
-    "softwareTools": {
+    {
+      "label": "softwareTools",
       "title": "Software & Tools",
       "list": [
         {
@@ -345,7 +348,8 @@
         }
       ]
     },
-    "versionControlSystem": {
+    {
+      "label": "versionControlSystem",
       "title": "Version Control System",
       "list": [
         {
@@ -360,5 +364,5 @@
         }
       ]
     }
-  }
+  ]
 }

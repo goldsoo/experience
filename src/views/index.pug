@@ -198,47 +198,22 @@ block body
 
         .skillContentsWrap
           .partWrap
-            .part.language
-              dl
-                dt= data.skills.language.title
-                dd
-                  ul
-                    each $list in data.skills.language.list
-                      li
-                        .name(style= 'width:' +  $list.percentage + '%')
-                          span= $list.name + ' ' + $list.percentage + '%'
+            each $skill in data.skills
+              .part(class= $skill.label)
+                dl
+                  dt= $skill.title
+                  dd
+                    ul
+                      each $list in $skill.list
+                        li
+                          .name(style= 'width:' +  $list.percentage + '%')
+                            span= $list.name + ' ' + $list.percentage + '%'
 
-            .part.templateEngines
-              dl
-                dt= data.skills.templateEngines.title
-                dd
-                  ul
-                    each $list in data.skills.templateEngines.list
-                      li
-                        .name(style= 'width:' +  $list.percentage + '%')
-                          span= $list.name + ' ' + $list.percentage + '%'
-                      .website= $list.website
-                      .description= $list.description
+                          if $list.website
+                            .website= $list.website
 
-            .part.softwareTools
-              dl
-                dt= data.skills.softwareTools.title
-                dd
-                  ul
-                    each $list in data.skills.softwareTools.list
-                      li
-                        .name(style= 'width:' +  $list.percentage + '%')
-                          span= $list.name + ' ' + $list.percentage + '%'
-
-            .part.versionControlSystem
-              dl
-                dt= data.skills.versionControlSystem.title
-                dd
-                  ul
-                    each $list in data.skills.versionControlSystem.list
-                      li
-                        .name(style= 'width:' +  $list.percentage + '%')
-                          span= $list.name + ' ' + $list.percentage + '%'
+                          if $list.description
+                            .description= $list.description
 
       section.certificateWrapper
         h2 자격증
