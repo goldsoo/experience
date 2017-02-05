@@ -318,9 +318,11 @@ button {
             display: none;
         }
 
-        .partWrap {
-            padding: 1.5rem 2rem;
-            border-bottom: .1rem solid #ccc;
+        ul {
+            li {
+                padding: 1.5rem 2rem;
+                border-bottom: .1rem solid #ccc;
+            }
         }
 
         .projectWrap {

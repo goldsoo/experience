@@ -134,49 +134,50 @@ block body
       section.experienceWrapper
         h2 상세 경력
 
-        each $experience in data.experience
-          .partWrap
-            .projectWrap
-              .col
-                .company= $experience.company
-                .name= $experience.project.name
+        ul
+          each $experience in data.experience
+            li
+              .projectWrap
+                .col
+                  .company= $experience.company
+                  .name= $experience.project.name
 
-              .col
-                .appsWrap
-                  each $apps in $experience.project.apps
-                    .row
-                      if $apps.type === 'Mobile Website' && $apps.icon
-                        a.icon(
-                          href= $apps.appUrl
-                          target= '_blank')
+                .col
+                  .appsWrap
+                    each $apps in $experience.project.apps
+                      .row
+                        if $apps.type === 'Mobile Website' && $apps.icon
+                          a.icon(
+                            href= $apps.appUrl
+                            target= '_blank')
 
-                          img(src= $apps.icon alt= $experience.project.name)
+                            img(src= $apps.icon alt= $experience.project.name)
 
-                      else
-                        .typeWrap
-                          dfn type.
-                          span.type= $apps.type
+                        else
+                          .typeWrap
+                            dfn type.
+                            span.type= $apps.type
 
-                      if $apps.url
-                        a.url(
-                          href= $apps.url
-                          target= '_blank')
-                          = $apps.url
+                        if $apps.url
+                          a.url(
+                            href= $apps.url
+                            target= '_blank')
+                            = $apps.url
 
-                      .description
-                        = $apps.description
+                        .description
+                          = $apps.description
 
-                      .periodWrap
-                        dfn 기간
-                        span.period= $apps.period.from + ' ~ ' + $apps.period.to
+                        .periodWrap
+                          dfn 기간
+                          span.period= $apps.period.from + ' ~ ' + $apps.period.to
 
-                      .vcsWrap
-                        dfn Version Control System
-                        span.vcs= $apps.vcs
+                        .vcsWrap
+                          dfn Version Control System
+                          span.vcs= $apps.vcs
 
-              .col
-                each $roles in $experience.roles
-                  .roles= $roles
+                .col
+                  each $roles in $experience.roles
+                    .roles= $roles
 
       section.skillsWrapper
         h2
