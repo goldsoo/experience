@@ -239,13 +239,17 @@ block body
           each $educationCompletion in data.educationCompletion
             li
               dl
+                dt 교육기관
                 dd.institution= $educationCompletion.institution
               dl
+                dt 교육기간
                 dd.period
                   = $educationCompletion.startDate + ' ~ ' + $educationCompletion.endDate
               dl
+                dt 교육명
                 dd.name= $educationCompletion.name
               dl
+                dt 교육내용
                 dd.label= $educationCompletion.label
 
       section.awardsWrapper
