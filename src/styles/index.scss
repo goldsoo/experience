@@ -211,11 +211,11 @@ button {
             color: #999;
         }
 
-        .partWrap {
+        ul {
             border-top: .1rem solid $point-color;
             border-bottom: .1rem solid $point-color;
 
-            .part {
+            li {
                 display: table;
                 width: 100%;
                 table-layout: fixed;

@@ -218,18 +218,18 @@ block body
       section.certificateWrapper
         h2 자격증
 
-        .partWrap
+        ul
           each $certificate in data.certificate
-            .part
+            li
               .col.name= $certificate.name
               .col.acquireDate= $certificate.acquireDate
 
       section.educationCompletionWrapper
         h2 교육이수
 
-        .partWrap
+        ul
           each $educationCompletion in data.educationCompletion
-            .part
+            li
               .col.institution= $educationCompletion.institution
               .col.period
                 = $educationCompletion.startDate + ' ~ ' + $educationCompletion.endDate
@@ -239,9 +239,9 @@ block body
       section.awardsWrapper
         h2 수상
 
-        .partWrap
+        ul
           each $awards in data.awards
-            .part
+            li
               .col.title= $awards.title
               .col.date= $awards.date
               .col.awarder= $awards.awarder
