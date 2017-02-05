@@ -283,8 +283,9 @@ button {
 
             dl {
                 dt {
-                    color: $point-color;
                     padding-bottom: 1rem;
+                    word-break: break-all;
+                    color: $point-color;
                 }
 
                 dd {
