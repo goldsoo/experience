@@ -204,7 +204,7 @@ block body
                 dd
                   ul
                     each $list in data.skills.language.list
-                      li.row
+                      li
                         span.name(style= 'width:' +  $list.percentage + '%')
                           em= $list.name + ' ' + $list.percentage + '%'
 
@@ -214,7 +214,7 @@ block body
                 dd
                   ul
                     each $list in data.skills.templateEngines.list
-                      li.row
+                      li
                         span.name(style= 'width:' +  $list.percentage + '%')
                           em= $list.name + ' ' + $list.percentage + '%'
                       .website= $list.website
@@ -226,7 +226,7 @@ block body
                 dd
                   ul
                     each $list in data.skills.softwareTools.list
-                      li.row
+                      li
                         span.name(style= 'width:' +  $list.percentage + '%')
                           em= $list.name + ' ' + $list.percentage + '%'
 
@@ -236,7 +236,7 @@ block body
                 dd
                   ul
                     each $list in data.skills.versionControlSystem.list
-                      li.row
+                      li
                         span.name(style= 'width:' +  $list.percentage + '%')
                           em= $list.name + ' ' + $list.percentage + '%'
 

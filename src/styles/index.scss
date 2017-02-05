@@ -272,36 +272,40 @@ button {
                     color: $point-color;
                     padding-bottom: 1rem;
                 }
-            }
 
-            .row {
-                width: 100%;
-                height: 1.8rem;
-                margin-top: 1rem;
-                background-color: rgba($sub-color, .4);
-                box-shadow: inset 1px 1px rgba(0, 0, 0, .1);
-                overflow: hidden;
-                transform: translateZ(0);
+                dd {
+                    ul {
+                        li {
+                            width: 100%;
+                            height: 1.8rem;
+                            margin-top: 1rem;
+                            background-color: rgba($sub-color, .4);
+                            box-shadow: inset 1px 1px rgba(0, 0, 0, .1);
+                            overflow: hidden;
+                            transform: translateZ(0);
 
-                &:first-child {
-                    margin-top: 0;
-                }
+                            &:first-child {
+                                margin-top: 0;
+                            }
 
-                span.name {
-                    box-sizing: border-box;
-                    display: block;
-                    height: 100%;
-                    padding-left: 1rem;
-                    background-color: $point-color;
-                    animation: slideIn 10s infinite;
-                    box-shadow: inset .1rem .1rem rgba(0, 0, 0, .2);
-                    opacity: 0;
-                    font-size: 1.2rem;
+                            span.name {
+                                box-sizing: border-box;
+                                display: block;
+                                height: 100%;
+                                padding-left: 1rem;
+                                background-color: $point-color;
+                                animation: slideIn 10s infinite;
+                                box-shadow: inset .1rem .1rem rgba(0, 0, 0, .2);
+                                opacity: 0;
+                                font-size: 1.2rem;
 
-                    em {
-                        display: inline-block;
-                        padding-top: .2rem;
-                        color: $bg-color;
+                                em {
+                                    display: inline-block;
+                                    padding-top: .2rem;
+                                    color: $bg-color;
+                                }
+                            }
+                        }
                     }
                 }
             }
