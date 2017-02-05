@@ -205,8 +205,8 @@ block body
                   ul
                     each $list in data.skills.language.list
                       li
-                        span.name(style= 'width:' +  $list.percentage + '%')
-                          em= $list.name + ' ' + $list.percentage + '%'
+                        .name(style= 'width:' +  $list.percentage + '%')
+                          span= $list.name + ' ' + $list.percentage + '%'
 
             .part.templateEngines
               dl
@@ -215,8 +215,8 @@ block body
                   ul
                     each $list in data.skills.templateEngines.list
                       li
-                        span.name(style= 'width:' +  $list.percentage + '%')
-                          em= $list.name + ' ' + $list.percentage + '%'
+                        .name(style= 'width:' +  $list.percentage + '%')
+                          span= $list.name + ' ' + $list.percentage + '%'
                       .website= $list.website
                       .description= $list.description
 
@@ -227,8 +227,8 @@ block body
                   ul
                     each $list in data.skills.softwareTools.list
                       li
-                        span.name(style= 'width:' +  $list.percentage + '%')
-                          em= $list.name + ' ' + $list.percentage + '%'
+                        .name(style= 'width:' +  $list.percentage + '%')
+                          span= $list.name + ' ' + $list.percentage + '%'
 
             .part.versionControlSystem
               dl
@@ -237,8 +237,8 @@ block body
                   ul
                     each $list in data.skills.versionControlSystem.list
                       li
-                        span.name(style= 'width:' +  $list.percentage + '%')
-                          em= $list.name + ' ' + $list.percentage + '%'
+                        .name(style= 'width:' +  $list.percentage + '%')
+                          span= $list.name + ' ' + $list.percentage + '%'
 
       section.certificateWrapper
         h2 자격증

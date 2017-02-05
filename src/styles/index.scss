@@ -288,9 +288,8 @@ button {
                                 margin-top: 0;
                             }
 
-                            span.name {
+                            .name {
                                 box-sizing: border-box;
-                                display: block;
                                 height: 100%;
                                 padding-left: 1rem;
                                 background-color: $point-color;
@@ -299,7 +298,7 @@ button {
                                 opacity: 0;
                                 font-size: 1.2rem;
 
-                                em {
+                                span {
                                     display: inline-block;
                                     padding-top: .2rem;
                                     color: $bg-color;
