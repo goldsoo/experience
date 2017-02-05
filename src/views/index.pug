@@ -187,8 +187,9 @@ block body
                         dd= $apps.vcs
 
                 .col
-                  each $roles in $experience.roles
-                    .roles= $roles
+                  dl
+                    each $roles in $experience.roles
+                      dd.roles= $roles
 
       section.skillsWrapper
         h2
