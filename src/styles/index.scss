@@ -18,9 +18,11 @@ button {
 }
 
 .container {
+    box-sizing: border-box;
     max-width: 89rem;
     min-width: 32rem;
     margin: 0 auto;
+    padding: 0 1rem;
     font-size: 1.4rem;
 }
 
