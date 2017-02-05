@@ -177,7 +177,10 @@ block body
 
                       dl.period
                         dt 기간
-                        dd= $apps.period.from + ' ~ ' + $apps.period.to
+                        dd.period
+                          time(datetime= $apps.period.from)= $apps.period.from
+                          = ' ~ '
+                          time(datetime= $apps.period.to)= $apps.period.to
 
                       dl.vcs
                         dt Version Control System
