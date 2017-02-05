@@ -222,8 +222,10 @@ block body
           each $certificate in data.certificate
             li
               dl
+                dt 자격증명
                 dd.name= $certificate.name
               dl
+                dt 취득일
                 dd.acquireDate= $certificate.acquireDate
 
       section.educationCompletionWrapper

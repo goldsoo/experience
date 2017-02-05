@@ -231,6 +231,10 @@ button {
                     &:first-child {
                         width: 30%;
                     }
+
+                    dt {
+                        display: none;
+                    }
                 }
             }
         }
