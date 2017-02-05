@@ -244,7 +244,9 @@ block body
               dl
                 dt 교육기간
                 dd.period
-                  = $educationCompletion.startDate + ' ~ ' + $educationCompletion.endDate
+                  time(datetime= $educationCompletion.startDate)= $educationCompletion.startDate
+                  = ' ~ '
+                  time(datetime= $educationCompletion.endDate)= $educationCompletion.endDate
               dl
                 dt 교육명
                 dd.name= $educationCompletion.name
