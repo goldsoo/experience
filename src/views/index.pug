@@ -226,7 +226,8 @@ block body
                 dd.name= $certificate.name
               dl
                 dt 취득일
-                dd.acquireDate= $certificate.acquireDate
+                dd.acquireDate
+                  time(datetime=$certificate.acquireDate)= $certificate.acquireDate
               dl
                 dt 기관명
                 dd.acquireDate= $certificate.institute
