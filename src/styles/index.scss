@@ -267,9 +267,11 @@ button {
                 padding-right: 2rem;
             }
 
-            .title {
-                color: $point-color;
-                padding-bottom: 1rem;
+            dl {
+                dt {
+                    color: $point-color;
+                    padding-bottom: 1rem;
+                }
             }
 
             .row {
