@@ -221,8 +221,10 @@ block body
         ul
           each $certificate in data.certificate
             li
-              .col.name= $certificate.name
-              .col.acquireDate= $certificate.acquireDate
+              dl
+                dd.name= $certificate.name
+              dl
+                dd.acquireDate= $certificate.acquireDate
 
       section.educationCompletionWrapper
         h2 교육이수
@@ -230,11 +232,15 @@ block body
         ul
           each $educationCompletion in data.educationCompletion
             li
-              .col.institution= $educationCompletion.institution
-              .col.period
-                = $educationCompletion.startDate + ' ~ ' + $educationCompletion.endDate
-              .col.name= $educationCompletion.name
-              .col.label= $educationCompletion.label
+              dl
+                dd.institution= $educationCompletion.institution
+              dl
+                dd.period
+                  = $educationCompletion.startDate + ' ~ ' + $educationCompletion.endDate
+              dl
+                dd.name= $educationCompletion.name
+              dl
+                dd.label= $educationCompletion.label
 
       section.awardsWrapper
         h2 수상
@@ -242,7 +248,11 @@ block body
         ul
           each $awards in data.awards
             li
-              .col.title= $awards.title
-              .col.date= $awards.date
-              .col.awarder= $awards.awarder
-              .col.summary= $awards.summary
+              dl
+                dd.title= $awards.title
+              dl
+                dd.date= $awards.date
+              dl
+                dd.awarder= $awards.awarder
+              dl
+                dd.summary= $awards.summary
