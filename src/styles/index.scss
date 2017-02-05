@@ -240,6 +240,16 @@ button {
         }
     }
 
+    .certificateWrapper {
+        dl {
+            &:first-child {
+                + dl {
+                    width: 47%;
+                }
+            }
+        }
+    }
+
     .skillsWrapper {
         margin: 0 0 3.8rem;
         padding: 4.8rem 0 1.8rem;

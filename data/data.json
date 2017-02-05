@@ -94,14 +94,17 @@
   "certificate": [
     {
       "name": "컴퓨터그래픽스운용기능사",
+      "institute": "한국산업인력관리공단",
       "acquireDate": "2001-04-16"
     },
     {
       "name": "디자인실기교사",
+      "institute": "교육인적자원부",
       "acquireDate": "2002-02-07"
     },
     {
       "name": "시각디자인산업기사",
+      "institute": "한국산업인력관리공단",
       "acquireDate": "2004-12-04"
     }
   ],
