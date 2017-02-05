@@ -139,8 +139,12 @@ block body
             li
               .projectWrap
                 .col
-                  .company= $experience.company
-                  .name= $experience.project.name
+                  dl
+                    dt 프로젝트 회사
+                    dd.company= $experience.company
+                  dl
+                    dt 프로젝트 이름
+                    dd.name= $experience.project.name
 
                 .col
                   .appsWrap

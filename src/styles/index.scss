@@ -342,6 +342,27 @@ button {
                         width: 60%;
                     }
                 }
+
+                dl {
+                    + dl {
+                        padding-top: .2rem;
+                    }
+
+                    dt {
+                        display: none;
+                    }
+
+                    dd {
+                        &.company {
+                            font-size: 1.2rem;
+                            color: $sub-color;
+                        }
+
+                        &.name {
+                            font-size: 1.6rem;
+                        }
+                    }
+                }
             }
 
             a {
@@ -350,12 +371,6 @@ button {
                 &:hover {
                     text-decoration: underline;
                 }
-            }
-
-            .company {
-                padding-bottom: .2rem;
-                font-size: 1.2rem;
-                color: $sub-color;
             }
 
             a.icon {
