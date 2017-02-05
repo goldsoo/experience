@@ -148,7 +148,7 @@ block body
 
                 .col.appsWrap
                   each $apps in $experience.project.apps
-                    .row
+                    .part
                       if $apps.type === 'Mobile Website' && $apps.icon
                         a.icon(
                           href= $apps.appUrl

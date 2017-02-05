@@ -384,12 +384,12 @@ button {
             }
 
             .appsWrap {
-                .row {
+                .part {
                     margin-right: 2rem;
                     padding-left: 1rem;
                     padding-right: 1rem;
 
-                    + .row {
+                    + .part {
                         margin-top: 1rem;
                         padding-top: 1rem;
                         border-top: .1rem solid $bg-color;
