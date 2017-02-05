@@ -150,16 +150,19 @@ block body
                   each $apps in $experience.project.apps
                     .part
                       if $apps.type === 'Mobile Website' && $apps.icon
-                        a.icon(
-                          href= $apps.appUrl
-                          target= '_blank')
+                        dl.type
+                          dt type
+                          dd
+                            a.icon(
+                              href= $apps.appUrl
+                              target= '_blank')
 
-                          img(src= $apps.icon alt= $experience.project.name)
+                              img(src= $apps.icon alt= $experience.project.name)
 
                       else
-                        .typeWrap
-                          dfn type.
-                          span.type= $apps.type
+                        dl.type
+                          dt type
+                          dd= $apps.type
 
                       if $apps.url
                         a.url(
