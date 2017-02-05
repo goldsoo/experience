@@ -163,10 +163,10 @@ block body
                           dd= $apps.type
 
                       if $apps.url
-                        dl
+                        dl.url
                           dt URL
                           dd
-                            a.url(
+                            a(
                               href= $apps.url
                               target= '_blank')
                               = $apps.url
@@ -175,13 +175,13 @@ block body
                         dt Description
                         dd= $apps.description
 
-                      dl.periodWrap
+                      dl.period
                         dt 기간
-                        dd.period= $apps.period.from + ' ~ ' + $apps.period.to
+                        dd= $apps.period.from + ' ~ ' + $apps.period.to
 
-                      dl.vcsWrap
+                      dl.vcs
                         dt Version Control System
-                        dd.vcs= $apps.vcs
+                        dd= $apps.vcs
 
                 .col
                   each $roles in $experience.roles
