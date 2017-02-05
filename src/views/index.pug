@@ -149,19 +149,17 @@ block body
                 .col.appsWrap
                   each $apps in $experience.project.apps
                     .part
-                      if $apps.type === 'Mobile Website' && $apps.icon
-                        dl.type
-                          dt type
+                      dl.type
+                        dt type
+
+                        if $apps.type === 'Mobile Website' && $apps.icon
                           dd
                             a.icon(
                               href= $apps.appUrl
                               target= '_blank')
 
                               img(src= $apps.icon alt= $experience.project.name)
-
-                      else
-                        dl.type
-                          dt type
+                        else
                           dd= $apps.type
 
                       if $apps.url
