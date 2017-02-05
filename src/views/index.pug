@@ -202,39 +202,43 @@ block body
               dl
                 dt= data.skills.language.title
                 dd
-                  each $list in data.skills.language.list
-                    .row
-                      span.name(style= 'width:' +  $list.percentage + '%')
-                        em= $list.name + ' ' + $list.percentage + '%'
+                  ul
+                    each $list in data.skills.language.list
+                      li.row
+                        span.name(style= 'width:' +  $list.percentage + '%')
+                          em= $list.name + ' ' + $list.percentage + '%'
 
             .part.templateEngines
               dl
                 dt= data.skills.templateEngines.title
                 dd
-                  each $list in data.skills.templateEngines.list
-                    .row
-                      span.name(style= 'width:' +  $list.percentage + '%')
-                        em= $list.name + ' ' + $list.percentage + '%'
-                    .website= $list.website
-                    .description= $list.description
+                  ul
+                    each $list in data.skills.templateEngines.list
+                      li.row
+                        span.name(style= 'width:' +  $list.percentage + '%')
+                          em= $list.name + ' ' + $list.percentage + '%'
+                      .website= $list.website
+                      .description= $list.description
 
             .part.softwareTools
               dl
                 dt= data.skills.softwareTools.title
                 dd
-                  each $list in data.skills.softwareTools.list
-                    .row
-                      span.name(style= 'width:' +  $list.percentage + '%')
-                        em= $list.name + ' ' + $list.percentage + '%'
+                  ul
+                    each $list in data.skills.softwareTools.list
+                      li.row
+                        span.name(style= 'width:' +  $list.percentage + '%')
+                          em= $list.name + ' ' + $list.percentage + '%'
 
             .part.versionControlSystem
               dl
                 dt= data.skills.versionControlSystem.title
                 dd
-                  each $list in data.skills.versionControlSystem.list
-                    .row
-                      span.name(style= 'width:' +  $list.percentage + '%')
-                        em= $list.name + ' ' + $list.percentage + '%'
+                  ul
+                    each $list in data.skills.versionControlSystem.list
+                      li.row
+                        span.name(style= 'width:' +  $list.percentage + '%')
+                          em= $list.name + ' ' + $list.percentage + '%'
 
       section.certificateWrapper
         h2 자격증
