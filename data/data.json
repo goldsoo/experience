@@ -107,10 +107,9 @@
   ],
   "experience": [
     {
-      "name": "Shopping",
-      "company": "INTERPARK",
+      "company": "인터파크",
       "project": {
-        "name": "인터파크 쇼핑",
+        "name": "쇼핑",
         "apps": [
           {
             "type": "Website",
@@ -142,10 +141,9 @@
       ]
     },
     {
-      "name": "Pet",
-      "company": "INTERPARK",
+      "company": "인터파크",
       "project": {
-        "name": "인터파크 반려동물 전문몰",
+        "name": "반려동물 전문몰 Pet",
         "apps": [
           {
             "type": "Mobile Website",
@@ -166,10 +164,9 @@
       ]
     },
     {
-      "name": "Onepay",
-      "company": "INTERPARK",
+      "company": "인터파크",
       "project": {
-        "name": "인터파크 간편결제 시스템 원페이",
+        "name": "간편결제 시스템 OnePay",
         "apps": [
           {
             "type": "Website",
@@ -197,10 +194,9 @@
       ]
     },
     {
-      "name": "Interpark Partner Support System",
-      "company": "INTERPARK",
+      "company": "인터파크",
       "project": {
-        "name": "인터파크 판매자 매니저 관리 시스템",
+        "name": "판매자매니저 관리시스템 IPSS",
         "apps": [
           {
             "type": "Website",
@@ -230,10 +226,9 @@
       ]
     },
     {
-      "name": "Interpark itoys",
-      "company": "INTERPARK",
+      "company": "인터파크",
       "project": {
-        "name": "인터파크 장난감왕국 아이토이즈",
+        "name": "장난감왕국 Itoys",
         "apps": [
           {
             "type": "Website",
@@ -253,10 +248,9 @@
       ]
     },
     {
-      "name": "Global Interpark",
-      "company": "INTERPARK",
+      "company": "인터파크",
       "project": {
-        "name": "인터파크 글로벌 쇼핑",
+        "name": "글로벌 쇼핑",
         "apps": [
           {
             "type": "Website",
