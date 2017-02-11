@@ -1,6 +1,6 @@
 html {
-  background-color: #333;
-  color: #fff;
+  background-color: #fff;
+  color: #333;
 }
 
 input,
@@ -10,9 +10,11 @@ button {
 }
 
 .container {
+  box-sizing: border-box;
   max-width: 89rem;
   min-width: 32rem;
   margin: 0 auto;
+  padding: 0 1rem;
   font-size: 1.4rem;
 }
 
@@ -22,20 +24,19 @@ button {
   text-align: center;
 }
 
-.topWrapper .img {
+.topWrapper .photo {
   box-sizing: border-box;
   display: inline-block;
-  width: 9rem;
-  height: 9rem;
+  width: 11rem;
+  height: 11rem;
   margin-bottom: 1rem;
-  border: 0.5rem solid #71acbc;
   border-radius: 50%;
   background-color: #eee;
   overflow: hidden;
   text-align: center;
 }
 
-.topWrapper .img img {
+.topWrapper .photo img {
   width: 100%;
   margin-top: -1.2rem;
   -o-object-fit: cover;
@@ -43,168 +44,150 @@ button {
 }
 
 .topWrapper .messageWrapper {
-  font-size: 1.8rem;
   padding-bottom: 2rem;
+  font-weight: 400;
+  font-size: 3.4rem;
+  text-transform: uppercase;
 }
 
-.topWrapper .infoWrap .row + .row {
-  margin-top: .6rem;
+.topWrapper .infoWrap {
+  max-width: 55rem;
+  margin: 0 auto;
 }
 
-.topWrapper .infoWrap .row + .row:last-child {
-  margin-top: .8rem;
-}
-
-.topWrapper .infoWrap .row .part {
+.topWrapper .infoWrap .part {
   display: inline-block;
+  margin: .3rem 0;
+  padding: 0 1rem;
 }
 
-.topWrapper .infoWrap .row .part + .part {
-  padding-left: 2rem;
-}
-
-.topWrapper .infoWrap .row .part dfn {
+.topWrapper .infoWrap .part dt {
+  display: inline-block;
   padding-right: .6rem;
   font-size: 1.2rem;
   color: #999;
 }
 
-.topWrapper .infoWrap .row .part .detail {
-  color: #fff;
+.topWrapper .infoWrap .part dt::after {
+  content: ".";
+}
+
+.topWrapper .infoWrap .part dd {
+  display: inline-block;
+  color: #333;
+}
+
+.topWrapper .infoWrap .part dd a {
+  color: #333;
+}
+
+.topWrapper .infoWrap .part dd a:hover {
+  text-decoration: underline;
 }
 
 .contentsWrapper {
   padding: 3rem 0;
 }
 
-.contentsWrapper .educationWrapper {
-  padding-bottom: 2.8rem;
+.contentsWrapper .history {
+  padding-bottom: 3.4rem;
+  overflow: hidden;
 }
 
-.contentsWrapper .educationWrapper h2 {
-  padding-bottom: .8rem;
-  font-size: 1.6rem;
+.contentsWrapper .history h2 {
+  padding-left: 2rem;
+  font-size: 1.5rem;
   font-weight: normal;
-  color: #333;
+  color: #fff;
 }
 
-.contentsWrapper .educationWrapper h2 span {
-  padding: 0 .4rem;
+.contentsWrapper .history h2 span {
+  padding: .1rem .8rem;
   background-color: #71acbc;
 }
 
-.contentsWrapper .educationWrapper .partWrap {
+.contentsWrapper .history .partWrap {
   position: relative;
-  padding-top: 10rem;
-  border-bottom: 0.2rem solid #71acbc;
+  border-bottom: 0.1rem solid #71acbc;
+  font-size: 0;
 }
 
-.contentsWrapper .educationWrapper .partWrap .part {
-  position: absolute;
-  bottom: -.8rem;
-}
-
-.contentsWrapper .educationWrapper .partWrap .part:after {
+.contentsWrapper .history .partWrap::after {
   content: "";
+  position: absolute;
+  right: -.7rem;
+  bottom: .3rem;
+  width: 2rem;
+  height: 2rem;
+  border-width: .1rem;
+  border-style: solid;
+  border-color: transparent transparent #71acbc;
+  -webkit-transform: rotate(30deg);
+  transform: rotate(30deg);
+}
+
+.contentsWrapper .history .partWrap .part {
+  position: relative;
+  display: inline-block;
+  box-sizing: border-box;
+  width: 33.33333%;
+  padding: 1.6rem 1rem 1.8rem 2rem;
+  bottom: -.1rem;
+  border-bottom: 0.1rem solid #71acbc;
+  vertical-align: bottom;
+}
+
+.contentsWrapper .history .partWrap .part:after {
+  content: "";
+  position: absolute;
+  bottom: -.7rem;
+  left: 2rem;
   display: block;
   width: 1rem;
   height: 1rem;
   border-radius: 50%;
   border: 0.2rem solid #71acbc;
-  background-color: #333;
+  background-color: #fff;
 }
 
-.contentsWrapper .educationWrapper .partWrap .part.highSchool {
-  left: 5%;
+.contentsWrapper .history .partWrap .part dt {
+  display: none;
 }
 
-.contentsWrapper .educationWrapper .partWrap .part.college {
-  left: 37%;
+.contentsWrapper .history .partWrap .part dd {
+  font-size: 1.2rem;
 }
 
-.contentsWrapper .educationWrapper .partWrap .part.university {
-  left: 70%;
-}
-
-.contentsWrapper .educationWrapper .partWrap .part .institution {
+.contentsWrapper .history .partWrap .part dd:first-of-type {
   padding-bottom: .4rem;
-}
-
-.contentsWrapper .educationWrapper .partWrap .part .major,
-.contentsWrapper .educationWrapper .partWrap .part .gpa {
-  font-size: 1.2rem;
-}
-
-.contentsWrapper .educationWrapper .partWrap .part .period {
-  padding: 1rem 0 .2rem;
-  font-size: 1.2rem;
-  color: #999;
-}
-
-.contentsWrapper .careerWrapper {
-  padding-bottom: 2.8rem;
-}
-
-.contentsWrapper .careerWrapper h2 {
-  padding-bottom: .8rem;
+  font-weight: 500;
   font-size: 1.6rem;
-  font-weight: normal;
-  color: #333;
 }
 
-.contentsWrapper .careerWrapper h2 span {
-  padding: 0 .4rem;
-  background-color: #71acbc;
-}
-
-.contentsWrapper .careerWrapper .partWrap {
-  position: relative;
-  padding-top: 10rem;
-  border-bottom: 0.2rem solid #71acbc;
-}
-
-.contentsWrapper .careerWrapper .partWrap .part {
-  position: absolute;
-  bottom: -.8rem;
-}
-
-.contentsWrapper .careerWrapper .partWrap .part:after {
-  content: "";
-  display: block;
-  width: 1rem;
-  height: 1rem;
-  border-radius: 50%;
-  border: 0.2rem solid #71acbc;
-  background-color: #333;
-}
-
-.contentsWrapper .careerWrapper .partWrap .part.ako {
-  left: 5%;
-}
-
-.contentsWrapper .careerWrapper .partWrap .part.interpark {
-  left: 37%;
-}
-
-.contentsWrapper .careerWrapper .partWrap .part .company {
-  padding-bottom: .4rem;
-}
-
-.contentsWrapper .careerWrapper .partWrap .part .row {
-  font-size: 1.2rem;
-}
-
-.contentsWrapper .careerWrapper .partWrap .part .row .rank {
+.contentsWrapper .history .partWrap .part .row .rank {
   padding-left: .5rem;
 }
 
-.contentsWrapper .careerWrapper .partWrap .part .task {
-  font-size: 1.2rem;
+.contentsWrapper .history .partWrap .part .row .rank::before {
+  content: "-";
+  margin-right: .4rem;
 }
 
-.contentsWrapper .careerWrapper .partWrap .part .period {
+.contentsWrapper .history .partWrap .part .gpa {
+  padding-top: .5rem;
+}
+
+.contentsWrapper .history .partWrap .part .gpa span {
+  background-color: #eee;
+  border: .1rem solid #ddd;
+  border-radius: .5rem;
+  padding: 0 .4rem;
+  font-size: 1.1rem;
+  color: #666;
+}
+
+.contentsWrapper .history .partWrap .part .period {
   padding: 1rem 0 .2rem;
-  font-size: 1.2rem;
   color: #999;
 }
 
@@ -224,38 +207,48 @@ button {
   color: #999;
 }
 
-.contentsWrapper .certificateWrapper .partWrap,
-.contentsWrapper .educationCompletionWrapper .partWrap,
-.contentsWrapper .awardsWrapper .partWrap {
+.contentsWrapper .certificateWrapper ul,
+.contentsWrapper .educationCompletionWrapper ul,
+.contentsWrapper .awardsWrapper ul {
   border-top: 0.1rem solid #71acbc;
   border-bottom: 0.1rem solid #71acbc;
 }
 
-.contentsWrapper .certificateWrapper .partWrap .part,
-.contentsWrapper .educationCompletionWrapper .partWrap .part,
-.contentsWrapper .awardsWrapper .partWrap .part {
+.contentsWrapper .certificateWrapper ul li,
+.contentsWrapper .educationCompletionWrapper ul li,
+.contentsWrapper .awardsWrapper ul li {
   display: table;
   width: 100%;
   table-layout: fixed;
   padding: 1rem 0;
 }
 
-.contentsWrapper .certificateWrapper .partWrap .part + .part,
-.contentsWrapper .educationCompletionWrapper .partWrap .part + .part,
-.contentsWrapper .awardsWrapper .partWrap .part + .part {
+.contentsWrapper .certificateWrapper ul li + .part,
+.contentsWrapper .educationCompletionWrapper ul li + .part,
+.contentsWrapper .awardsWrapper ul li + .part {
   border-top: 0.1rem solid rgba(153, 153, 153, 0.3);
 }
 
-.contentsWrapper .certificateWrapper .partWrap .part .col,
-.contentsWrapper .educationCompletionWrapper .partWrap .part .col,
-.contentsWrapper .awardsWrapper .partWrap .part .col {
+.contentsWrapper .certificateWrapper ul li dl,
+.contentsWrapper .educationCompletionWrapper ul li dl,
+.contentsWrapper .awardsWrapper ul li dl {
   display: table-cell;
 }
 
-.contentsWrapper .certificateWrapper .partWrap .part .col:first-child,
-.contentsWrapper .educationCompletionWrapper .partWrap .part .col:first-child,
-.contentsWrapper .awardsWrapper .partWrap .part .col:first-child {
+.contentsWrapper .certificateWrapper ul li dl:first-child,
+.contentsWrapper .educationCompletionWrapper ul li dl:first-child,
+.contentsWrapper .awardsWrapper ul li dl:first-child {
   width: 30%;
+}
+
+.contentsWrapper .certificateWrapper ul li dl dt,
+.contentsWrapper .educationCompletionWrapper ul li dl dt,
+.contentsWrapper .awardsWrapper ul li dl dt {
+  display: none;
+}
+
+.contentsWrapper .certificateWrapper dl:first-child + dl {
+  width: 47%;
 }
 
 .contentsWrapper .skillsWrapper {
@@ -268,7 +261,7 @@ button {
   padding-bottom: 1.8rem;
   font-size: 1.6rem;
   font-weight: normal;
-  color: #333;
+  color: #fff;
 }
 
 .contentsWrapper .skillsWrapper h2 span {
@@ -291,12 +284,13 @@ button {
   padding-right: 2rem;
 }
 
-.contentsWrapper .skillsWrapper .skillContentsWrap .title {
-  color: #71acbc;
+.contentsWrapper .skillsWrapper .skillContentsWrap dl dt {
   padding-bottom: 1rem;
+  word-break: break-all;
+  color: #71acbc;
 }
 
-.contentsWrapper .skillsWrapper .skillContentsWrap .row {
+.contentsWrapper .skillsWrapper .skillContentsWrap dl dd ul li {
   width: 100%;
   height: 1.8rem;
   margin-top: 1rem;
@@ -307,13 +301,12 @@ button {
   transform: translateZ(0);
 }
 
-.contentsWrapper .skillsWrapper .skillContentsWrap .row:first-child {
+.contentsWrapper .skillsWrapper .skillContentsWrap dl dd ul li:first-child {
   margin-top: 0;
 }
 
-.contentsWrapper .skillsWrapper .skillContentsWrap .row span.name {
+.contentsWrapper .skillsWrapper .skillContentsWrap dl dd ul li .name {
   box-sizing: border-box;
-  display: block;
   height: 100%;
   padding-left: 1rem;
   background-color: #71acbc;
@@ -322,12 +315,13 @@ button {
   box-shadow: inset 0.1rem 0.1rem rgba(0, 0, 0, 0.2);
   opacity: 0;
   font-size: 1.2rem;
+  padding-bottom: .3rem;
 }
 
-.contentsWrapper .skillsWrapper .skillContentsWrap .row span.name em {
+.contentsWrapper .skillsWrapper .skillContentsWrap dl dd ul li .name span {
   display: inline-block;
   padding-top: .2rem;
-  color: #333;
+  color: #fff;
 }
 
 .contentsWrapper .skillsWrapper .skillContentsWrap .website,
@@ -337,13 +331,13 @@ button {
   color: rgba(153, 153, 153, 0.8);
 }
 
-.contentsWrapper .experienceWrapper {
-  background-color: rgba(153, 153, 153, 0.1);
+.contentsWrapper .experienceWrapper h2 {
+  display: none;
 }
 
-.contentsWrapper .experienceWrapper .partWrap {
+.contentsWrapper .experienceWrapper ul li {
   padding: 1.5rem 2rem;
-  border-bottom: 0.1rem solid #333;
+  border-bottom: .1rem solid #ccc;
 }
 
 .contentsWrapper .experienceWrapper .projectWrap {
@@ -351,19 +345,6 @@ button {
   width: 100%;
   table-layout: fixed;
   font-size: 1.2rem;
-}
-
-.contentsWrapper .experienceWrapper .projectWrap .col {
-  display: table-cell;
-}
-
-.contentsWrapper .experienceWrapper .projectWrap .col:first-child {
-  width: 25%;
-  vertical-align: middle;
-}
-
-.contentsWrapper .experienceWrapper .projectWrap .col:first-child + .col {
-  width: 60%;
 }
 
 .contentsWrapper .experienceWrapper .projectWrap a {
@@ -374,65 +355,79 @@ button {
   text-decoration: underline;
 }
 
-.contentsWrapper .experienceWrapper .projectWrap .company {
-  padding-bottom: .2rem;
+.contentsWrapper .experienceWrapper .projectWrap .col {
+  display: table-cell;
+  vertical-align: top;
+}
+
+.contentsWrapper .experienceWrapper .projectWrap .col:first-child {
+  width: 25%;
+}
+
+.contentsWrapper .experienceWrapper .projectWrap .col:first-child + .col {
+  width: 60%;
+}
+
+.contentsWrapper .experienceWrapper .projectWrap .col dl + dl {
+  padding-top: .2rem;
+}
+
+.contentsWrapper .experienceWrapper .projectWrap .col dl dt {
+  display: none;
+}
+
+.contentsWrapper .experienceWrapper .projectWrap .col dl dd.company {
   font-size: 1.2rem;
   color: #999;
 }
 
-.contentsWrapper .experienceWrapper .projectWrap a.icon {
+.contentsWrapper .experienceWrapper .projectWrap .col dl dd.name {
+  font-size: 1.6rem;
+}
+
+.contentsWrapper .experienceWrapper .projectWrap .col dl dd .icon {
   display: block;
   width: 3rem;
 }
 
-.contentsWrapper .experienceWrapper .projectWrap a.icon img {
+.contentsWrapper .experienceWrapper .projectWrap .col dl dd .icon img {
   display: block;
   width: 100%;
 }
 
-.contentsWrapper .experienceWrapper .projectWrap .appsWrap .row {
+.contentsWrapper .experienceWrapper .projectWrap .col dl.type {
+  padding-bottom: 1rem;
+  font-size: 1.4rem;
+  color: #999;
+}
+
+.contentsWrapper .experienceWrapper .projectWrap .col dl.description {
+  padding-bottom: 1rem;
+}
+
+.contentsWrapper .experienceWrapper .projectWrap .col dl.period dt, .contentsWrapper .experienceWrapper .projectWrap .col dl.vcs dt {
+  display: inline-block;
+}
+
+.contentsWrapper .experienceWrapper .projectWrap .col dl.period dt::after, .contentsWrapper .experienceWrapper .projectWrap .col dl.vcs dt::after {
+  content: ":";
+  padding: 0 .4rem;
+}
+
+.contentsWrapper .experienceWrapper .projectWrap .col dl.period dd, .contentsWrapper .experienceWrapper .projectWrap .col dl.vcs dd {
+  display: inline-block;
+}
+
+.contentsWrapper .experienceWrapper .projectWrap .col.appsWrap .part {
   margin-right: 2rem;
   padding-left: 1rem;
   padding-right: 1rem;
 }
 
-.contentsWrapper .experienceWrapper .projectWrap .appsWrap .row + .row {
+.contentsWrapper .experienceWrapper .projectWrap .col.appsWrap .part + .part {
   margin-top: 1rem;
   padding-top: 1rem;
-  border-top: 0.1rem solid #333;
-}
-
-.contentsWrapper .experienceWrapper .projectWrap .appsWrap .typeWrap {
-  padding-bottom: 1rem;
-  color: #999;
-}
-
-.contentsWrapper .experienceWrapper .projectWrap .appsWrap .typeWrap dfn {
-  display: none;
-}
-
-.contentsWrapper .experienceWrapper .projectWrap .appsWrap .icon {
-  display: block;
-  padding-bottom: 1rem;
-}
-
-.contentsWrapper .experienceWrapper .projectWrap .appsWrap .url {
-  display: block;
-  padding-bottom: .4rem;
-}
-
-.contentsWrapper .experienceWrapper .projectWrap .appsWrap .description {
-  padding-bottom: 1rem;
-}
-
-.contentsWrapper .experienceWrapper .projectWrap .appsWrap .periodWrap {
-  padding-bottom: .4rem;
-}
-
-.contentsWrapper .experienceWrapper .projectWrap .appsWrap .periodWrap dfn:after,
-.contentsWrapper .experienceWrapper .projectWrap .appsWrap .vcsWrap dfn:after {
-  content: ":";
-  padding: 0 .4rem;
+  border-top: .1rem solid #ccc;
 }
 
 @-webkit-keyframes slideIn {
