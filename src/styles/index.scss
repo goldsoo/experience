@@ -308,15 +308,19 @@ button {
                                 height: 100%;
                                 padding-left: 1rem;
                                 background-color: $point-color;
-                                animation: slideIn 10s infinite;
                                 box-shadow: inset .1rem .1rem rgba(0, 0, 0, .2);
-                                opacity: 0;
+                                transform: translateX(-100%);
+                                transition: transform .4s;
                                 font-size: 1.2rem;
 
                                 span {
                                     display: inline-block;
                                     padding-top: .2rem;
                                     color: $bg-color;
+                                }
+
+                                &.inView {
+                                    transform: none;
                                 }
                             }
                         }
@@ -446,18 +450,3 @@ button {
     }
 }
 
-@keyframes slideIn {
-    0% {
-        transform: translateX(-100%);
-        opacity: 1;
-    }
-
-    10% {
-        transform: translateX(0);
-        opacity: 1;
-    }
-
-    100% {
-        opacity: 1;
-    }
-}

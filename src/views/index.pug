@@ -206,7 +206,7 @@ block body
                     ul
                       each $list in $skill.list
                         li
-                          .name(style= 'width:' +  $list.percentage + '%')
+                          .name.inViewport(style= 'width:' +  $list.percentage + '%')
                             span= $list.name + ' ' + $list.percentage + '%'
 
                           if $list.website
