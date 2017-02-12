@@ -404,6 +404,17 @@ button {
                 font-size: 1.2rem;
                 color: rgba($sub-color, .8);
             }
+
+            @media (max-width: 640px) {
+                .partWrap {
+                    display: block;
+
+                    .part {
+                        display: block;
+                        padding-bottom: 2rem;
+                    }
+                }
+            }
         }
     }
 
