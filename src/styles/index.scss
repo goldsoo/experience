@@ -267,8 +267,8 @@ button {
         }
     }
 
-        padding-bottom: 4.8rem;
     .ectInfoWrappr {
+        padding: 0 2rem 4.8rem;
         font-size: 1.3rem;
 
         h2 {
@@ -296,7 +296,11 @@ button {
                     display: table-cell;
 
                     &:first-child {
-                        width: 30%;
+                        width: 27%;
+
+                        + dl {
+                            width: 27%;
+                        }
                     }
 
                     dt {
