@@ -494,6 +494,7 @@ button {
 
                     &.description {
                         padding-bottom: 1rem;
+                        line-height: 1.6rem;
                     }
 
                     &.period,
@@ -559,7 +560,6 @@ button {
 
                     dl {
                         &.role {
-                            margin-top: 1rem;
                             padding: 1rem 1rem 0;
                         }
                     }
