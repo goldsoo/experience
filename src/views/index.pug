@@ -269,15 +269,15 @@ block body
                 dt 대회명
                 dd.title= $awards.title
               dl
-                dt 수상일
-                dd.date
-                   time(datetime= $awards.date)= $awards.date
-              dl
                 dt 기관명
                 dd.awarder= $awards.awarder
               dl
                 dt 수상명
                 dd.summary= $awards.summary
+              dl
+                dt 수상일
+                dd.date
+                   time(datetime= $awards.date)= $awards.date
 
 block append scripts
   script(src= '/scripts/index.js')
