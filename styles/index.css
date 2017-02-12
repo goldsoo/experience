@@ -112,15 +112,15 @@ button {
 }
 
 .topWrapper .infoWrap + .infoWrap .part dd a.github {
-  background-image: url("/images/icons/github.png");
+  background-image: url("../images/icons/github.png");
 }
 
 .topWrapper .infoWrap + .infoWrap .part dd a.website {
-  background-image: url("/images/icons/home.png");
+  background-image: url("../images/icons/home.png");
 }
 
 .topWrapper .infoWrap + .infoWrap .part dd a.email {
-  background-image: url("/images/icons/email.png");
+  background-image: url("../images/icons/email.png");
 }
 
 .topWrapper .infoWrap + .infoWrap .part dd a:hover {
