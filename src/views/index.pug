@@ -178,7 +178,7 @@ block body
 
                       dl.description
                         dt Description
-                        dd= $apps.description
+                        dd!= $apps.description.replace(/\n/gm, '<br>')
 
                       dl.period
                         dt 기간

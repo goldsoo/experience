@@ -117,10 +117,10 @@
           {
             "type": "Website",
             "url": "http://www.interpark.com",
-            "description": "주문서/검색/이벤트템플릿 표준개선, 코너(다이나믹프라이스, 럭키백 등)신규개발, 전문몰(가구/키친/쇼핑) 전시통합 등",
+            "description": "주문서/검색/이벤트템플릿 레거시환경 개선(비표준 -> 웹표준) \n 코너(다이나믹프라이스, 럭키백, 톡집사 등) 신규 서비스 UI 개발 \n 전문몰(가구/키친/쇼핑) 전시통합 UI 개선",
             "period": {
-              "from": "2013-07-09",
-              "to": ""
+              "from": "2013-07",
+              "to": "2017-01"
             },
             "vcs": "SVN"
           },
@@ -129,10 +129,10 @@
             "icon": "./images/appIcon/shopping.png",
             "url": "http://m.shop.interpark.com",
             "appUrl": "https://play.google.com/store/apps/details?id=com.interpark.shop",
-            "description": "메인, 홈구성, 카테고리, 검색, 주문서 개편, 톡집사 신규",
+            "description": "메인, 홈구성, 카테고리, 검색, 주문서 개편 UI 개발 \n 쇼핑 챗봇 서비스 '톡집사' UI 개발",
             "period": {
               "from": "2014-12",
-              "to": ""
+              "to": "2017-01"
             },
             "vcs": "Git"
           }
@@ -152,7 +152,7 @@
             "type": "Mobile Website",
             "icon": "./images/appIcon/pet.png",
             "appUrl": "https://play.google.com/store/apps/details?id=com.interpark.pet",
-            "description": "신규 구축(이지리오더, 장바구니, 주문서, 톡집사 등), 참여율 30%",
+            "description": "신규 구축(이지리오더, 장바구니, 주문서, 톡집사 등) UI 개발 \n Pug 사용 \n 참여율 30%",
             "period": {
               "from": "2016-05",
               "to": "2016-10"
@@ -173,7 +173,7 @@
         "apps": [
           {
             "type": "Website",
-            "description": "인터파크 최초로 도입하는 간편결제 시스템, Node.js, Gulp 기반 UI프레임워크 신규 구축 후 진행, 참여율 100%",
+            "description": "인터파크 최초로 도입하는 간편결제 시스템(별도 앱설치 없이 사용가능) \n Node.js, Gulp 기반 UI프레임워크 신규 구축 후 진행 \n 이니시스, 옐로페이와 협업 \n 인터파크 쇼핑 선적용(테스크탑/모바일), 인터파크 펫, 체크인나우 적용예정 \n 참여율 100%",
             "period": {
               "from": "2016-06",
               "to": "2017-01"
@@ -182,7 +182,7 @@
           },
           {
             "type": "Mobile Website",
-            "description": "인터파크 최초로 도입하는 간편결제 시스템, Node.js, Gulp 기반 UI프레임워크 신규 구축 후 진행, 참여율 100%",
+            "description": "인터파크 최초로 도입하는 간편결제 시스템(별도 앱설치 없이 사용가능) \n Node.js, Gulp 기반 UI프레임워크 신규 구축 후 진행 \n 이니시스, 옐로페이와 협업 \n 인터파크 쇼핑 선적용(테스크탑/모바일), 인터파크 펫, 체크인나우 적용예정 \n 참여율 100%",
             "period": {
               "from": "2016-06",
               "to": "2017-01"
@@ -203,7 +203,7 @@
         "apps": [
           {
             "type": "Website",
-            "description": "메인 리뉴얼, 비표준 -> 표준전환, 광고센터 개선",
+            "description": "메인 리뉴얼, 레거시환경 개선(비표준 -> 웹표준) \n 광고센터 UI 개선 \n 참여율 100%",
             "period": {
               "from": "2015-09",
               "to": "2016-03"
@@ -214,7 +214,7 @@
             "type": "Mobile Website",
             "icon": "./images/appIcon/seller.png",
             "appUrl": "https://play.google.com/store/apps/details?id=com.interpark.sellermanager",
-            "description": "신규구축(메인, 조회리스트 등), 참여율 30%",
+            "description": "신규구축(메인, 조회리스트 등) UI 개발 \n Pug사용 \n 참여율 50%",
             "period": {
               "from": "2016-06-01",
               "to": "2016-10-17"
@@ -236,9 +236,9 @@
           {
             "type": "Website",
             "url": "http://toy.interpark.com",
-            "description": "메인/주문서/toyDB 신규, 소스정리, UI개선",
+            "description": "외주에서 제작한 소스 정리하여 Git 버전 관리 \n 오픈 후 메인/주문서/전시/검색 UI개선 \n ToyDB 신규 서비스 UI 개발 \n 참여율 40%",
             "period": {
-              "from": "2014-10",
+              "from": "2014-09",
               "to": "2014-12"
             },
             "vcs": "Git"
@@ -258,9 +258,9 @@
           {
             "type": "Website",
             "url": "http://www.globalinterpark.com",
-            "description": "신규 구축(메인, 상품상세, 주문서 등), 다국어(일어, 중국어, 영어)작업, Swig사용, 참여율 25%",
+            "description": "신규 구축(메인, 상품상세, 주문서 등) UI 개발 \n 다국어(한국어, 일어, 중국어, 영어) Json 작업 \n Swig사용 \n 참여율 30%",
             "period": {
-              "from": "2014-09",
+              "from": "2014-07",
               "to": "2014-11"
             },
             "vcs": "Git"
