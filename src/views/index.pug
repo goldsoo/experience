@@ -33,28 +33,6 @@ block body
               = data.basics.phone.mobile
 
         .part
-          dt e-mail
-          dd
-            a(href= 'mailto:' + data.basics.email)
-              = data.basics.email
-
-        .part
-          dt website
-          dd
-            a(
-              href= data.basics.website
-              target= '_blank')
-              = data.basics.website.replace(/^https?:\/\//, '')
-
-        .part
-          dt github
-          dd
-            a(
-              href= data.basics.github
-              target= '_blank')
-              = data.basics.github.replace(/^https?:\/\//, '')
-
-        .part
           dt
             abbr(title= 'address') addr
           dd
@@ -70,6 +48,33 @@ block body
               href= googleMapUrl
               target= '_blank')
               = data.basics.location.koreaAddress
+
+      dl.infoWrap
+        .part
+          dt github
+          dd
+            a(
+              href= data.basics.github
+              class= "github"
+              target= '_blank')
+              = data.basics.github.replace(/^https?:\/\//, '')
+
+        .part
+          dt website
+          dd
+            a(
+              href= data.basics.website
+              class= "website"
+              target= '_blank')
+              = data.basics.website.replace(/^https?:\/\//, '')
+
+        .part
+          dt e-mail
+          dd
+            a(
+              href= 'mailto:' + data.basics.email
+              class= "email")
+              = data.basics.email
 
     main.contentsWrapper
       section.history.educationWrapper

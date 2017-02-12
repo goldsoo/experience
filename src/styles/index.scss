@@ -89,6 +89,48 @@ button {
                 }
             }
         }
+
+        + .infoWrap {
+            padding-top: .5rem;
+
+            .part {
+                padding: 0 .3rem;
+
+                dt {
+                    display: none;
+                }
+
+                dd {
+                    vertical-align: top;
+
+                    a {
+                        display: block;
+                        width: 2.4rem;
+                        height: 2.4rem;
+                        background-repeat: no-repeat;
+                        background-position: 0 0;
+                        background-size: 100%;
+                        font-size: 0;
+
+                        &.github {
+                            background-image: url("#{$base}/icons/github.png");
+                        }
+
+                        &.website {
+                            background-image: url("#{$base}/icons/home.png");
+                        }
+
+                        &.email {
+                            background-image: url("#{$base}/icons/email.png");
+                        }
+
+                        &:hover {
+                            opacity: .9;
+                        }
+                    }
+                }
+            }
+        }
     }
 }
 
