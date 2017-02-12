@@ -230,12 +230,12 @@ block body
                 dt 자격증명
                 dd.name= $certificate.name
               dl
+                dt 기관명
+                dd.acquireDate= $certificate.institute
+              dl
                 dt 취득일
                 dd.acquireDate
                   time(datetime=$certificate.acquireDate)= $certificate.acquireDate
-              dl
-                dt 기관명
-                dd.acquireDate= $certificate.institute
 
       section.ectInfoWrappr.educationCompletion
         h2 교육이수
