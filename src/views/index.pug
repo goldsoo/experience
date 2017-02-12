@@ -244,20 +244,20 @@ block body
           each $educationCompletion in data.educationCompletion
             li
               dl
-                dt 교육기관
+                dt 교육명
+                dd.name= $educationCompletion.name
+              dl
+                dt 기관명
                 dd.institution= $educationCompletion.institution
               dl
-                dt 교육기간
+                dt 교육내용
+                dd.label!= $educationCompletion.label.replace(/\n/gm, '<br>')
+              dl
+                dt 기간
                 dd.period
                   time(datetime= $educationCompletion.startDate)= $educationCompletion.startDate
                   = ' ~ '
                   time(datetime= $educationCompletion.endDate)= $educationCompletion.endDate
-              dl
-                dt 교육명
-                dd.name= $educationCompletion.name
-              dl
-                dt 교육내용
-                dd.label= $educationCompletion.label
 
       section.ectInfoWrappr.awards
         h2 수상
