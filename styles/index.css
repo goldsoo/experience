@@ -85,6 +85,69 @@ button {
   text-decoration: underline;
 }
 
+.topWrapper .infoWrap + .infoWrap {
+  padding-top: .5rem;
+}
+
+.topWrapper .infoWrap + .infoWrap .part {
+  padding: 0 .3rem;
+}
+
+.topWrapper .infoWrap + .infoWrap .part dt {
+  display: none;
+}
+
+.topWrapper .infoWrap + .infoWrap .part dd {
+  vertical-align: top;
+}
+
+.topWrapper .infoWrap + .infoWrap .part dd a {
+  display: block;
+  width: 2.4rem;
+  height: 2.4rem;
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  background-size: 100%;
+  font-size: 0;
+}
+
+.topWrapper .infoWrap + .infoWrap .part dd a.github {
+  background-image: url("/images/icons/github.png");
+}
+
+.topWrapper .infoWrap + .infoWrap .part dd a.website {
+  background-image: url("/images/icons/home.png");
+}
+
+.topWrapper .infoWrap + .infoWrap .part dd a.email {
+  background-image: url("/images/icons/email.png");
+}
+
+.topWrapper .infoWrap + .infoWrap .part dd a:hover {
+  opacity: .9;
+}
+
+@media print {
+  .topWrapper .infoWrap + .infoWrap {
+    padding: 0;
+  }
+  .topWrapper .infoWrap + .infoWrap .part {
+    padding: 0 1rem;
+  }
+  .topWrapper .infoWrap + .infoWrap .part dt {
+    display: inline-block;
+  }
+  .topWrapper .infoWrap + .infoWrap .part dd a {
+    display: inline-block;
+    width: auto;
+    height: auto;
+    font-size: 1.4rem;
+  }
+  .topWrapper .infoWrap + .infoWrap .part dd a.github, .topWrapper .infoWrap + .infoWrap .part dd a.website, .topWrapper .infoWrap + .infoWrap .part dd a.email {
+    background-image: none;
+  }
+}
+
 .contentsWrapper {
   padding: 3rem 0;
 }
@@ -191,64 +254,93 @@ button {
   color: #999;
 }
 
-.contentsWrapper .certificateWrapper,
-.contentsWrapper .educationCompletionWrapper,
-.contentsWrapper .awardsWrapper {
-  padding-bottom: 4.8rem;
+.contentsWrapper .ectInfoWrappr {
+  padding: 0 2rem 4.8rem;
   font-size: 1.3rem;
 }
 
-.contentsWrapper .certificateWrapper h2,
-.contentsWrapper .educationCompletionWrapper h2,
-.contentsWrapper .awardsWrapper h2 {
+.contentsWrapper .ectInfoWrappr h2 {
   padding-bottom: .4rem;
   font-size: 1.6rem;
   font-weight: normal;
-  color: #999;
+  color: #71acbc;
 }
 
-.contentsWrapper .certificateWrapper ul,
-.contentsWrapper .educationCompletionWrapper ul,
-.contentsWrapper .awardsWrapper ul {
+.contentsWrapper .ectInfoWrappr ul {
   border-top: 0.1rem solid #71acbc;
   border-bottom: 0.1rem solid #71acbc;
 }
 
-.contentsWrapper .certificateWrapper ul li,
-.contentsWrapper .educationCompletionWrapper ul li,
-.contentsWrapper .awardsWrapper ul li {
+.contentsWrapper .ectInfoWrappr ul li {
   display: table;
   width: 100%;
   table-layout: fixed;
   padding: 1rem 0;
 }
 
-.contentsWrapper .certificateWrapper ul li + .part,
-.contentsWrapper .educationCompletionWrapper ul li + .part,
-.contentsWrapper .awardsWrapper ul li + .part {
+.contentsWrapper .ectInfoWrappr ul li + .part {
   border-top: 0.1rem solid rgba(153, 153, 153, 0.3);
 }
 
-.contentsWrapper .certificateWrapper ul li dl,
-.contentsWrapper .educationCompletionWrapper ul li dl,
-.contentsWrapper .awardsWrapper ul li dl {
+.contentsWrapper .ectInfoWrappr ul li dl {
   display: table-cell;
 }
 
-.contentsWrapper .certificateWrapper ul li dl:first-child,
-.contentsWrapper .educationCompletionWrapper ul li dl:first-child,
-.contentsWrapper .awardsWrapper ul li dl:first-child {
-  width: 30%;
+.contentsWrapper .ectInfoWrappr ul li dl:first-child {
+  width: 27%;
 }
 
-.contentsWrapper .certificateWrapper ul li dl dt,
-.contentsWrapper .educationCompletionWrapper ul li dl dt,
-.contentsWrapper .awardsWrapper ul li dl dt {
+.contentsWrapper .ectInfoWrappr ul li dl:first-child + dl {
+  width: 27%;
+}
+
+.contentsWrapper .ectInfoWrappr ul li dl dt {
   display: none;
 }
 
-.contentsWrapper .certificateWrapper dl:first-child + dl {
-  width: 47%;
+.contentsWrapper .ectInfoWrappr.certificate ul li dl:first-child + dl {
+  width: 50%;
+}
+
+@media (max-width: 640px) {
+  .contentsWrapper .ectInfoWrappr.certificate ul li dl:first-child + dl {
+    width: 100%;
+  }
+}
+
+@media (max-width: 640px) {
+  .contentsWrapper .ectInfoWrappr ul li {
+    display: block;
+    padding-top: 0;
+  }
+  .contentsWrapper .ectInfoWrappr ul li:first-child {
+    padding-top: 1rem;
+  }
+  .contentsWrapper .ectInfoWrappr ul li dl {
+    display: block;
+  }
+  .contentsWrapper .ectInfoWrappr ul li dl + dl {
+    padding-top: .5rem;
+  }
+  .contentsWrapper .ectInfoWrappr ul li dl:first-child {
+    width: 100%;
+  }
+  .contentsWrapper .ectInfoWrappr ul li dl:first-child + dl {
+    width: 100%;
+  }
+  .contentsWrapper .ectInfoWrappr ul li dl dt {
+    display: block;
+    float: left;
+  }
+  .contentsWrapper .ectInfoWrappr ul li dl dt:after {
+    content: ":";
+  }
+  .contentsWrapper .ectInfoWrappr ul li dl dd {
+    padding-left: 5.7rem;
+  }
+  .contentsWrapper .ectInfoWrappr.awards dd {
+    padding-left: 4.5rem;
+  }
 }
 
 .contentsWrapper .skillsWrapper {
@@ -258,15 +350,16 @@ button {
 }
 
 .contentsWrapper .skillsWrapper h2 {
-  padding-bottom: 1.8rem;
-  font-size: 1.6rem;
+  padding-left: 2rem;
+  padding-bottom: 2rem;
+  font-size: 1.5rem;
   font-weight: normal;
   color: #fff;
 }
 
 .contentsWrapper .skillsWrapper h2 span {
-  padding: 0 .4rem;
-  background-color: rgba(153, 153, 153, 0.8);
+  padding: .1rem .8rem;
+  background-color: #999;
 }
 
 .contentsWrapper .skillsWrapper .skillContentsWrap {
@@ -336,6 +429,16 @@ button {
   display: none;
   font-size: 1.2rem;
   color: rgba(153, 153, 153, 0.8);
+}
+
+@media (max-width: 640px) {
+  .contentsWrapper .skillsWrapper .skillContentsWrap .partWrap {
+    display: block;
+  }
+  .contentsWrapper .skillsWrapper .skillContentsWrap .partWrap .part {
+    display: block;
+    padding-bottom: 2rem;
+  }
 }
 
 .contentsWrapper .experienceWrapper h2 {
@@ -410,6 +513,7 @@ button {
 
 .contentsWrapper .experienceWrapper .projectWrap .col dl.description {
   padding-bottom: 1rem;
+  line-height: 1.6rem;
 }
 
 .contentsWrapper .experienceWrapper .projectWrap .col dl.period dt, .contentsWrapper .experienceWrapper .projectWrap .col dl.vcs dt {
@@ -434,5 +538,32 @@ button {
 .contentsWrapper .experienceWrapper .projectWrap .col.appsWrap .part + .part {
   margin-top: 1rem;
   padding-top: 1rem;
-  border-top: .1rem solid #ccc;
+}
+
+@media (max-width: 640px) {
+  .contentsWrapper .experienceWrapper ul li {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+  .contentsWrapper .experienceWrapper .projectWrap {
+    display: block;
+  }
+  .contentsWrapper .experienceWrapper .projectWrap .col {
+    display: block;
+  }
+  .contentsWrapper .experienceWrapper .projectWrap .col:first-child {
+    width: 100%;
+    padding: .4rem 0;
+    margin-bottom: 1rem;
+    background: #f1f1f1;
+  }
+  .contentsWrapper .experienceWrapper .projectWrap .col:first-child + .col {
+    width: 100%;
+  }
+  .contentsWrapper .experienceWrapper .projectWrap .col:first-child dl {
+    padding: 0 1rem;
+  }
+  .contentsWrapper .experienceWrapper .projectWrap .col dl.role {
+    padding: 1rem 1rem 0;
+  }
 }
