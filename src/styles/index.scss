@@ -130,6 +130,33 @@ button {
                     }
                 }
             }
+
+            @media print {
+                padding: 0;
+
+                .part {
+                    padding: 0 1rem;
+
+                    dt {
+                        display: inline-block;
+                    }
+
+                    dd {
+                        a {
+                            display: inline-block;
+                            width: auto;
+                            height: auto;
+                            font-size: 1.4rem;
+
+                            &.github,
+                            &.website,
+                            &.email {
+                                background-image: none;
+                            }
+                        }
+                    }
+                }
+            }
         }
     }
 }
