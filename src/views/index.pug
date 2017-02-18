@@ -156,6 +156,14 @@ block body
 
                 .col.appsWrap
                   - var $apps = $experience.project.apps
+
+                  .part
+                    dl.description
+                      dt Description
+
+                      each $description in $apps.description
+                        dd!= $description.replace(/\n/gm, '<br>')
+
                     dl.type
                       dt type
 
@@ -173,9 +181,6 @@ block body
                               target= '_blank')
                               = $url
 
-                      dl.description
-                        dt Description
-                        dd!= $apps.description.replace(/\n/gm, '<br>')
 
                       dl.period
                         dt 기간
