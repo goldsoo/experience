@@ -146,7 +146,8 @@
     {
       "company": "인터파크",
       "project": {
-        "name": "반려동물 전문몰 Pet",
+        "name": "펫",
+        "explain": "반려동물 전문몰",
         "apps": [
           {
             "type": "Mobile Website",
@@ -169,7 +170,8 @@
     {
       "company": "인터파크",
       "project": {
-        "name": "간편결제 시스템 OnePay",
+        "name": "원페이",
+        "explain": "간편결제 시스템",
         "apps": [
           {
             "type": "Website",
@@ -199,7 +201,8 @@
     {
       "company": "인터파크",
       "project": {
-        "name": "판매자매니저 관리시스템 IPSS",
+        "name": "IPSS",
+        "explain": "판매자매니저 관리시스템",
         "apps": [
           {
             "type": "Website",
@@ -231,7 +234,8 @@
     {
       "company": "인터파크",
       "project": {
-        "name": "장난감왕국 Itoys",
+        "name": "Itoys",
+        "explain": "장난감왕국",
         "apps": [
           {
             "type": "Website",
