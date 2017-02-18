@@ -155,21 +155,23 @@ block body
                         = $experience.project.explain
 
                 .col.appsWrap
-
-                      if $apps.url
-                        dl.url
-                          dt URL
                   - var $apps = $experience.project.apps
                     dl.type
                       dt type
 
                       each $type in $apps.type
                         dd= $type
+
+                    if $apps.url
+                      dl.url
+                        dt URL
+
+                        each $url in $apps.url
                           dd
                             a(
-                              href= $apps.url
+                              href= $url
                               target= '_blank')
-                              = $apps.url
+                              = $url
 
                       dl.description
                         dt Description
