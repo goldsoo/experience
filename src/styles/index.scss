@@ -508,7 +508,7 @@ button {
                     width: 25%;
 
                     + .col {
-                        width: 60%;
+                        width: 65%;
                     }
                 }
 
@@ -542,19 +542,47 @@ button {
                         }
                     }
 
-                    &.type {
-                        padding-bottom: 1rem;
-                        font-size: 1.4rem;
-                        color: $sub-color;
-                    }
 
                     &.description {
                         padding-bottom: 1rem;
-                        line-height: 1.6rem;
+                        font-size: 1.4rem;
+                        line-height: 2rem;
                     }
 
-                    &.period,
-                    &.vcs {
+                    &.type {
+                        font-size: 1.4rem;
+                        color: $sub-color;
+                        padding-bottom: .1rem;
+
+                        dd {
+                            display: inline-block;
+                            margin-left: -.2rem;
+
+                            &::before {
+                                content: ",";
+                                padding-right: .5rem;
+                            }
+
+                            &:first-of-type {
+                                &::before {
+                                    display: none;
+                                    padding-right: 0;
+                                }
+                            }
+                        }
+                    }
+
+                    &.url {
+                        padding-bottom: .4rem;
+
+                        dd {
+                            + dd {
+                                padding-top: .1rem;
+                            }
+                        }
+                    }
+
+                    &.period {
                         dt {
                             display: inline-block;
 
@@ -568,29 +596,55 @@ button {
                             display: inline-block;
                         }
                     }
-                }
 
-                &.appsWrap {
-                    .part {
-                        margin-right: 2rem;
-                        padding-left: 1rem;
-                        padding-right: 1rem;
+                    &.role,
+                    &.tools {
+                        dt {
+                            display: inline-block;
 
-                        + .part {
-                            margin-top: 1rem;
-                            padding-top: 1rem;
+                            &::after {
+                                content: ":";
+                                padding: 0 .4rem;
+                            }
                         }
+
+                        dd {
+                            display: inline-block;
+                            margin-left: -.2rem;
+
+                            &::before {
+                                content: ",";
+                                padding-right: .5rem;
+                            }
+
+                            &:first-of-type {
+                                &::before {
+                                    display: none;
+                                    padding-right: 0;
+                                }
+                            }
+                        }
+                    }
+
+                    &.participation {
+                        dt {
+                            display: block;
+                            color: $sub-color;
+                        }
+
+                        dd {
+                            font-size: 2rem;
+
+                            &::after {
+                                content: "%";
+                                font-size: 1.2rem;
+                            }
+                        }
+
                     }
                 }
             }
         }
-
-            ul {
-                li {
-                    padding-left: 1rem;
-                    padding-right: 1rem;
-                }
-            }
 
         @media screen and (max-width: 640px) {
             .projectWrap {
@@ -599,24 +653,38 @@ button {
                 .col {
                     display: block;
 
+                    + .col {
+                        margin-top: 1rem;
+                    }
+
                     &:first-child {
                         width: 100%;
-                        padding: .4rem 0;
-                        margin-bottom: 1rem;
-                        background: #f1f1f1;
 
                         + .col {
                             width: 100%;
                         }
-
-                        dl {
-                            padding: 0 1rem;
-                        }
                     }
 
                     dl {
-                        &.role {
-                            padding: 1rem 1rem 0;
+                        &.participation {
+                            dt {
+                                display: inline-block;
+                                font-size: 1.3rem;
+
+                                &:after {
+                                    content: ":";
+                                }
+                            }
+
+                            dd {
+                                display: inline-block;
+                                font-size: 1.4rem;
+                                font-weight: bold;
+
+                                &:after {
+                                    font-size: 1.4rem;
+                                }
+                            }
                         }
                     }
                 }
