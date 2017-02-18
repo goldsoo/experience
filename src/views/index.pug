@@ -159,16 +159,7 @@ block body
                     .part
                       dl.type
                         dt type
-
-                        if $apps.type === 'Mobile Website' && $apps.icon
-                          dd
-                            a.icon(
-                              href= $apps.appUrl
-                              target= '_blank')
-
-                              img(src= $apps.icon alt= $experience.project.name)
-                        else
-                          dd= $apps.type
+                        dd= $apps.type
 
                       if $apps.url
                         dl.url
