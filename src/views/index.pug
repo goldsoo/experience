@@ -155,15 +155,16 @@ block body
                         = $experience.project.explain
 
                 .col.appsWrap
-                    .part
-                      dl.type
-                        dt type
-                        dd= $apps.type
 
                       if $apps.url
                         dl.url
                           dt URL
                   - var $apps = $experience.project.apps
+                    dl.type
+                      dt type
+
+                      each $type in $apps.type
+                        dd= $type
                           dd
                             a(
                               href= $apps.url
