@@ -132,6 +132,17 @@
             "from": "2013-07",
             "to": "2017-01"
           },
+          "participationRate": 40,
+          "tools": [
+            "HTML",
+            "Ejs",
+            "Css",
+            "Sass",
+            "JavaScript",
+            "JQuery",
+            "Git",
+            "SVN"
+          ]
         }
       },
       "roles": [
@@ -157,6 +168,14 @@
             "from": "2016-05",
             "to": "2016-10"
           },
+          "participationRate": 30,
+          "tools": [
+            "Pug",
+            "Sass",
+            "JavaScript",
+            "JQuery",
+            "Git"
+          ]
         }
       },
       "roles": [
@@ -181,6 +200,15 @@
             "from": "2016-06",
             "to": "2017-01"
           },
+          "tools": [
+            "Ejs",
+            "Sass",
+            "JavaScript",
+            "JQuery",
+            "Node.js",
+            "Gulp",
+            "Git"
+          ]
         }
       },
       "roles": [
@@ -208,6 +236,16 @@
             "from": "2015-09",
             "to": "2016-03"
           },
+          "tools": [
+            "HTML",
+            "Pug",
+            "Css",
+            "Sass",
+            "JavaScript",
+            "JQuery",
+            "Git",
+            "SVN"
+          ]
         }
       },
       "roles": [
@@ -234,6 +272,16 @@
             "from": "2014-09",
             "to": "2014-12"
           },
+          "tools": [
+            "HTML",
+            "Ejs",
+            "Css",
+            "Sass",
+            "JavaScript",
+            "JQuery",
+            "Git",
+            "SVN"
+          ]
         }
       },
       "roles": [
@@ -259,6 +307,14 @@
             "from": "2014-07",
             "to": "2014-11"
           },
+          "tools": [
+            "Swig",
+            "Sass",
+            "JavaScript",
+            "JQuery",
+            "Git",
+            "SVN"
+          ]
         }
       },
       "roles": [
