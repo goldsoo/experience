@@ -145,11 +145,14 @@ block body
               .projectWrap
                 .col
                   dl
-                    dt 프로젝트 회사
-                    dd.company= $experience.company
-                  dl
                     dt 프로젝트 이름
                     dd.name= $experience.project.name
+                  dl
+                    dt 프로젝트 회사
+                    dd.company
+                      = $experience.company + ' '
+                      if($experience.project.explain)
+                        = $experience.project.explain
 
                 .col.appsWrap
                   each $apps in $experience.project.apps
