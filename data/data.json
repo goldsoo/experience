@@ -200,6 +200,7 @@
             "from": "2016-06",
             "to": "2017-01"
           },
+          "participationRate": 100,
           "tools": [
             "Ejs",
             "Sass",
@@ -236,6 +237,7 @@
             "from": "2015-09",
             "to": "2016-03"
           },
+          "participationRate": 50,
           "tools": [
             "HTML",
             "Pug",
@@ -272,6 +274,7 @@
             "from": "2014-09",
             "to": "2014-12"
           },
+          "participationRate": 40,
           "tools": [
             "HTML",
             "Ejs",
@@ -307,6 +310,7 @@
             "from": "2014-07",
             "to": "2014-11"
           },
+          "participationRate": 30,
           "tools": [
             "Swig",
             "Sass",
