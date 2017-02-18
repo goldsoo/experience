@@ -188,16 +188,13 @@ block body
                         = ' ~ '
                         time(datetime= $apps.period.to)= $apps.period.to
 
+                    dl.role
+                      dt 역할
 
-                      dl.vcs
-                        dt Version Control System
-                        dd= $apps.vcs
+                      each $roles in $experience.roles
+                        dd= $roles
 
                 .col
-                  dl.role
-                    dt 역할
-                    each $roles in $experience.roles
-                      dd= $roles
 
       section.skillsWrapper
         h2
