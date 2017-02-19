@@ -146,15 +146,34 @@
             "to": "2017-01"
           },
           "participationRate": 40,
-          "tools": [
-            "HTML",
-            "Ejs",
-            "Css",
-            "Sass",
-            "JavaScript",
-            "JQuery",
-            "Git",
-            "SVN"
+          "useTools": [
+            {
+              "label": "View Template Engine",
+              "tools": [
+                "ejs",
+                "pure HTML"
+              ]
+            },
+            {
+              "label": "CSS Preprocessor",
+              "tools": [
+                "SCSS(Sass)",
+                "pure CSS"
+              ]
+            },
+            {
+              "label": "JS",
+              "tools": [
+                "JQuery"
+              ]
+            },
+            {
+              "label": "(D)VCS",
+              "tools": [
+                "Git",
+                "SVN"
+              ]
+            }
           ]
         }
       },
@@ -191,12 +210,31 @@
             "to": "2016-10"
           },
           "participationRate": 30,
-          "tools": [
-            "Pug",
-            "Sass",
-            "JavaScript",
-            "JQuery",
-            "Git"
+          "useTools": [
+            {
+              "label": "View Template Engine",
+              "tools": [
+                "pure HTML"
+              ]
+            },
+            {
+              "label": "CSS Preprocessor",
+              "tools": [
+                "SCSS(Sass)"
+              ]
+            },
+            {
+              "label": "JS",
+              "tools": [
+                "JQuery"
+              ]
+            },
+            {
+              "label": "(D)VCS",
+              "tools": [
+                "Git"
+              ]
+            }
           ]
         }
       },
@@ -223,14 +261,43 @@
             "to": "2017-01"
           },
           "participationRate": 100,
-          "tools": [
-            "Ejs",
-            "Sass",
-            "JavaScript",
-            "JQuery",
-            "Node.js",
-            "Gulp",
-            "Git"
+          "useTools": [
+            {
+              "label": "View Template Engine",
+              "tools": [
+                "ejs"
+              ]
+            },
+            {
+              "label": "CSS Preprocessor",
+              "tools": [
+                "SCSS(Sass)"
+              ]
+            },
+            {
+              "label": "JS",
+              "tools": [
+                "JQuery"
+              ]
+            },
+            {
+              "label": "Platform",
+              "tools": [
+                "Node.js"
+              ]
+            },
+            {
+              "label": "Build",
+              "tools": [
+                "Gulp"
+              ]
+            },
+            {
+              "label": "(D)VCS",
+              "tools": [
+                "Git"
+              ]
+            }
           ]
         }
       },
@@ -269,15 +336,34 @@
             "to": "2016-03"
           },
           "participationRate": 50,
-          "tools": [
-            "HTML",
-            "Pug",
-            "Css",
-            "Sass",
-            "JavaScript",
-            "JQuery",
-            "Git",
-            "SVN"
+          "useTools": [
+            {
+              "label": "View Template Engine",
+              "tools": [
+                "jade(pug)",
+                "pure HTML"
+              ]
+            },
+            {
+              "label": "CSS Preprocessor",
+              "tools": [
+                "SCSS(Sass)",
+                "pure CSS"
+              ]
+            },
+            {
+              "label": "JS",
+              "tools": [
+                "JQuery"
+              ]
+            },
+            {
+              "label": "(D)VCS",
+              "tools": [
+                "Git",
+                "SVN"
+              ]
+            }
           ]
         }
       },
@@ -309,15 +395,34 @@
             "to": "2014-12"
           },
           "participationRate": 40,
-          "tools": [
-            "HTML",
-            "Ejs",
-            "Css",
-            "Sass",
-            "JavaScript",
-            "JQuery",
-            "Git",
-            "SVN"
+          "useTools": [
+            {
+              "label": "View Template Engine",
+              "tools": [
+                "ejs",
+                "pure HTML"
+              ]
+            },
+            {
+              "label": "CSS Preprocessor",
+              "tools": [
+                "SCSS(Sass)",
+                "pure CSS"
+              ]
+            },
+            {
+              "label": "JS",
+              "tools": [
+                "JQuery"
+              ]
+            },
+            {
+              "label": "(D)VCS",
+              "tools": [
+                "Git",
+                "SVN"
+              ]
+            }
           ]
         }
       },
@@ -348,13 +453,31 @@
             "to": "2014-11"
           },
           "participationRate": 30,
-          "tools": [
-            "Swig",
-            "Sass",
-            "JavaScript",
-            "JQuery",
-            "Git",
-            "SVN"
+          "useTools": [
+            {
+              "label": "View Template Engine",
+              "tools": [
+                "Swig"
+              ]
+            },
+            {
+              "label": "CSS Preprocessor",
+              "tools": [
+                "Less"
+              ]
+            },
+            {
+              "label": "JS",
+              "tools": [
+                "JQuery"
+              ]
+            },
+            {
+              "label": "(D)VCS",
+              "tools": [
+                "Git"
+              ]
+            }
           ]
         }
       },

@@ -180,7 +180,7 @@ block body
                             a(
                               href= $urls.url
                               target= '_blank')
-                              = $urls.label + ':' + $urls.url
+                              = $urls.label + ': ' + $urls.url
 
                     dl.period
                       dt 기간
@@ -195,11 +195,12 @@ block body
                       each $roles in $experience.roles
                         dd= $roles
 
-                    dl.tools
-                      dt Use Tools
+                    each $useTools in $apps.useTools
+                      dl.tools
+                        dt= $useTools.label
 
-                      each $tools in $apps.tools
-                        dd= $tools
+                        each $tool in $useTools.tools
+                          dd= $tool
 
                 .col
                   dl.participation
