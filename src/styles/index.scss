@@ -640,29 +640,6 @@ button {
                             width: 100%;
                         }
                     }
-
-                    dl {
-                        &.participation {
-                            dt {
-                                display: inline-block;
-                                font-size: 1.3rem;
-
-                                &:after {
-                                    content: ":";
-                                }
-                            }
-
-                            dd {
-                                display: inline-block;
-                                font-size: 1.4rem;
-                                font-weight: bold;
-
-                                &:after {
-                                    font-size: 1.4rem;
-                                }
-                            }
-                        }
-                    }
                 }
             }
         }
