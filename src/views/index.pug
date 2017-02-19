@@ -171,15 +171,16 @@ block body
                         dd= $type
 
                     if $apps.url
+                    if $apps.urls
                       dl.url
                         dt URL
 
-                        each $url in $apps.url
+                        each $urls in $apps.urls
                           dd
                             a(
-                              href= $url
+                              href= $urls.url
                               target= '_blank')
-                              = $url
+                              = $urls.label + ':' + $urls.url
 
                     dl.period
                       dt 기간

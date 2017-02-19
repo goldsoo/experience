@@ -119,11 +119,24 @@
             "데스크탑"
           ],
           "icon": "./images/appIcon/shopping.png",
-          "url": [
-            "http://www.interpark.com",
-            "http://m.shop.interpark.com"
+          "urls": [
+            {
+              "label": "Website",
+              "url": "http://www.interpark.com"
+            },
+            {
+              "label": "Website",
+              "url": "http://m.shop.interpark.com"
+            },
+            {
+              "label": "iOS",
+              "url": "https://itunes.apple.com/kr/app/inteopakeu-syoping/id504765473?mt=8"
+            },
+            {
+              "label": "Android",
+              "url": "https://play.google.com/store/apps/details?id=com.interpark.shop"
+            }
           ],
-          "appUrl": "https://play.google.com/store/apps/details?id=com.interpark.shop",
           "description": [
             "주문서/검색/이벤트템플릿 레거시환경 개선(비표준 -> 웹표준) \n 코너(다이나믹프라이스, 럭키백, 톡집사 등) 신규 서비스 UI 개발 \n 전문몰(가구/키친/쇼핑) 전시통합 UI 개선",
             "메인, 홈구성, 카테고리, 검색, 주문서 개편 UI 개발 \n 쇼핑 챗봇 서비스 '톡집사' UI 개발"
@@ -160,7 +173,16 @@
             "모바일"
           ],
           "icon": "./images/appIcon/pet.png",
-          "appUrl": "https://play.google.com/store/apps/details?id=com.interpark.pet",
+          "urls": [
+            {
+              "label": "iOS",
+              "url": "https://itunes.apple.com/kr/app/inteopakeu-pes-uliai-majchum/id1163123226?mt=8"
+            },
+            {
+              "label": "Android",
+              "url": "https://play.google.com/store/apps/details?id=com.interpark.pet"
+            }
+          ],
           "description": [
             "신규 구축(이지리오더, 장바구니, 주문서, 톡집사 등) UI 개발"
           ],
@@ -228,7 +250,16 @@
             "데스크탑"
           ],
           "icon": "./images/appIcon/seller.png",
-          "appUrl": "https://play.google.com/store/apps/details?id=com.interpark.sellermanager",
+          "urls": [
+            {
+              "label": "iOS",
+              "url": "https://itunes.apple.com/kr/app/inteopakeu-panmaejamaenijeo/id1119825141?mt=8"
+            },
+            {
+              "label": "Android",
+              "url": "https://play.google.com/store/apps/details?id=com.interpark.sellermanager"
+            }
+          ],
           "description": [
             "메인 리뉴얼, 레거시환경 개선(비표준 -> 웹표준) \n 광고센터 UI 개선",
             "신규구축(메인, 조회리스트 등) UI 개발"
@@ -264,8 +295,11 @@
           "type": [
             "데스크탑"
           ],
-          "url": [
-            "http://toy.interpark.com"
+          "urls": [
+            {
+              "label": "Website",
+              "url": "http://toy.interpark.com"
+            }
           ],
           "description": [
             "외주에서 제작한 소스 정리하여 Git 버전 관리 \n 오픈 후 메인/주문서/전시/검색 UI개선 \n ToyDB 신규 서비스 UI 개발"
@@ -300,8 +334,11 @@
           "type": [
             "데스크탑"
           ],
-          "url": [
-            "http://www.globalinterpark.com"
+          "urls": [
+            {
+              "label": "Website",
+              "url": "http://www.globalinterpark.com"
+            }
           ],
           "description": [
             "신규 구축(메인, 상품상세, 주문서 등) UI 개발 \n 다국어(한국어, 일어, 중국어, 영어) Json 작업"
