@@ -186,66 +186,6 @@
     {
       "company": "인터파크",
       "project": {
-        "name": "펫",
-        "explain": "반려동물",
-        "type": [
-          "모바일"
-        ],
-        "icon": "./images/appIcon/pet.png",
-        "urls": [
-          {
-            "label": "iOS",
-            "url": "https://itunes.apple.com/kr/app/inteopakeu-pes-uliai-majchum/id1163123226?mt=8"
-          },
-          {
-            "label": "Android",
-            "url": "https://play.google.com/store/apps/details?id=com.interpark.pet"
-          }
-        ],
-        "description": [
-          "신규 구축 30%",
-          "장바구니, 주문서, 톡집사, 이지리오더 등 UI 개발"
-        ],
-        "period": {
-          "from": "2016-05",
-          "to": "2016-10"
-        },
-        "participationRate": 30,
-        "useTools": [
-          {
-            "label": "View Template Engine",
-            "tools": [
-              "pure HTML"
-            ]
-          },
-          {
-            "label": "CSS Preprocessor",
-            "tools": [
-              "SCSS(Sass)"
-            ]
-          },
-          {
-            "label": "JS",
-            "tools": [
-              "JQuery"
-            ]
-          },
-          {
-            "label": "(D)VCS",
-            "tools": [
-              "Git"
-            ]
-          }
-        ],
-        "roles": [
-          "UI 개발",
-          "운영 및 유지보수"
-        ]
-      }
-    },
-    {
-      "company": "인터파크",
-      "project": {
         "name": "원페이",
         "explain": "간편결제 시스템",
         "type": [
@@ -291,6 +231,66 @@
             "label": "Build",
             "tools": [
               "Gulp"
+            ]
+          },
+          {
+            "label": "(D)VCS",
+            "tools": [
+              "Git"
+            ]
+          }
+        ],
+        "roles": [
+          "UI 개발",
+          "운영 및 유지보수"
+        ]
+      }
+    },
+    {
+      "company": "인터파크",
+      "project": {
+        "name": "펫",
+        "explain": "반려동물",
+        "type": [
+          "모바일"
+        ],
+        "icon": "./images/appIcon/pet.png",
+        "urls": [
+          {
+            "label": "iOS",
+            "url": "https://itunes.apple.com/kr/app/inteopakeu-pes-uliai-majchum/id1163123226?mt=8"
+          },
+          {
+            "label": "Android",
+            "url": "https://play.google.com/store/apps/details?id=com.interpark.pet"
+          }
+        ],
+        "description": [
+          "신규 구축 30%",
+          "장바구니, 주문서, 톡집사, 이지리오더 등 UI 개발"
+        ],
+        "period": {
+          "from": "2016-05",
+          "to": "2016-10"
+        },
+        "participationRate": 30,
+        "useTools": [
+          {
+            "label": "View Template Engine",
+            "tools": [
+              "pure HTML"
+            ]
+          },
+          {
+            "label": "CSS Preprocessor",
+            "tools": [
+              "SCSS(Sass)"
+            ]
+          },
+          {
+            "label": "JS",
+            "tools": [
+              "JQuery"
             ]
           },
           {
