@@ -633,6 +633,12 @@ button {
                         margin-top: 1rem;
                     }
 
+                    .part {
+                        + .part {
+                            padding-top: 1rem;
+                        }
+                    }
+
                     &:first-child {
                         width: 100%;
 
