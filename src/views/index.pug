@@ -141,41 +141,39 @@ block body
 
         ol
           each $experience in data.experience
+            - var $project = $experience.project
             li
               .projectWrap
                 .col
                   dl
                     dt 프로젝트 이름
-                    dd.name= $experience.project.name
+                    dd.name= $project.name
                   dl
                     dt 프로젝트 회사
                     dd.company
                       = $experience.company + ' '
-                      if ($experience.project.explain)
-                        = $experience.project.explain
+                      if ($project.explain)
+                        = $project.explain
 
                 .col.appsWrap
-                  - var $apps = $experience.project.apps
-
                   .part
                     dl.description
                       dt Description
 
-                      each $description in $apps.description
+                      each $description in $project.description
                         dd!= $description.replace(/\n/gm, '<br>')
 
                     dl.type
                       dt type
 
-                      each $type in $apps.type
+                      each $type in $project.type
                         dd= $type
 
-                    if $apps.url
-                    if $apps.urls
+                    if $project.urls
                       dl.url
                         dt URL
 
-                        each $urls in $apps.urls
+                        each $urls in $project.urls
                           dd
                             a(
                               href= $urls.url
@@ -192,10 +190,10 @@ block body
                     dl.role
                       dt 역할
 
-                      each $roles in $experience.roles
+                      each $roles in $project.roles
                         dd= $roles
 
-                    each $useTools in $apps.useTools
+                    each $useTools in $project.useTools
                       dl.tools
                         dt= $useTools.label
 
