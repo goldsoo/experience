@@ -302,13 +302,13 @@ button {
   width: 50%;
 }
 
-@media (max-width: 640px) {
+@media screen and (max-width: 640px) {
   .contentsWrapper .ectInfoWrappr.certificate ul li dl:first-child + dl {
     width: 100%;
   }
 }
 
-@media (max-width: 640px) {
+@media screen and (max-width: 640px) {
   .contentsWrapper .ectInfoWrappr ul li {
     display: block;
     padding-top: 0;
@@ -344,9 +344,7 @@ button {
 }
 
 .contentsWrapper .skillsWrapper {
-  margin: 0 0 3.8rem;
-  padding: 4.8rem 0 1.8rem;
-  background-color: rgba(153, 153, 153, 0.1);
+  padding: 4.8rem 0;
 }
 
 .contentsWrapper .skillsWrapper h2 {
@@ -431,7 +429,7 @@ button {
   color: rgba(153, 153, 153, 0.8);
 }
 
-@media (max-width: 640px) {
+@media screen and (max-width: 640px) {
   .contentsWrapper .skillsWrapper .skillContentsWrap .partWrap {
     display: block;
   }
@@ -445,7 +443,7 @@ button {
   display: none;
 }
 
-.contentsWrapper .experienceWrapper ul li {
+.contentsWrapper .experienceWrapper ol li {
   padding: 1.5rem 2rem;
   border-bottom: .1rem solid #ccc;
 }
@@ -471,11 +469,11 @@ button {
 }
 
 .contentsWrapper .experienceWrapper .projectWrap .col:first-child {
-  width: 25%;
+  width: 30%;
 }
 
-.contentsWrapper .experienceWrapper .projectWrap .col:first-child + .col {
-  width: 60%;
+.contentsWrapper .experienceWrapper .projectWrap .col .part + .part {
+  padding-top: 2rem;
 }
 
 .contentsWrapper .experienceWrapper .projectWrap .col dl + dl {
@@ -492,7 +490,7 @@ button {
 }
 
 .contentsWrapper .experienceWrapper .projectWrap .col dl dd.name {
-  font-size: 1.6rem;
+  font-size: 2rem;
 }
 
 .contentsWrapper .experienceWrapper .projectWrap .col dl dd .icon {
@@ -506,64 +504,101 @@ button {
 }
 
 .contentsWrapper .experienceWrapper .projectWrap .col dl.type {
-  padding-bottom: 1rem;
-  font-size: 1.4rem;
   color: #999;
+  padding-bottom: .1rem;
 }
 
-.contentsWrapper .experienceWrapper .projectWrap .col dl.description {
-  padding-bottom: 1rem;
-  line-height: 1.6rem;
-}
-
-.contentsWrapper .experienceWrapper .projectWrap .col dl.period dt, .contentsWrapper .experienceWrapper .projectWrap .col dl.vcs dt {
+.contentsWrapper .experienceWrapper .projectWrap .col dl.type dd {
   display: inline-block;
 }
 
-.contentsWrapper .experienceWrapper .projectWrap .col dl.period dt::after, .contentsWrapper .experienceWrapper .projectWrap .col dl.vcs dt::after {
+.contentsWrapper .experienceWrapper .projectWrap .col dl.type dd::before {
+  content: ",";
+  padding-right: .5rem;
+}
+
+.contentsWrapper .experienceWrapper .projectWrap .col dl.type dd:first-of-type::before {
+  display: none;
+  padding-right: 0;
+}
+
+.contentsWrapper .experienceWrapper .projectWrap .col dl.period {
+  color: #999;
+}
+
+.contentsWrapper .experienceWrapper .projectWrap .col dl.period dd {
+  display: inline-block;
+}
+
+.contentsWrapper .experienceWrapper .projectWrap .col dl.description {
+  padding-bottom: .8rem;
+  font-size: 1.4rem;
+  line-height: 2rem;
+}
+
+.contentsWrapper .experienceWrapper .projectWrap .col dl.url {
+  padding-bottom: .7rem;
+  font-size: 1.1rem;
+  line-height: 1.4rem;
+}
+
+.contentsWrapper .experienceWrapper .projectWrap .col dl.url dd + dd {
+  padding-top: .1rem;
+}
+
+.contentsWrapper .experienceWrapper .projectWrap .col dl.tools dt {
+  display: inline-block;
+}
+
+.contentsWrapper .experienceWrapper .projectWrap .col dl.tools dt::after {
   content: ":";
   padding: 0 .4rem;
 }
 
-.contentsWrapper .experienceWrapper .projectWrap .col dl.period dd, .contentsWrapper .experienceWrapper .projectWrap .col dl.vcs dd {
+.contentsWrapper .experienceWrapper .projectWrap .col dl.tools dd {
   display: inline-block;
 }
 
-.contentsWrapper .experienceWrapper .projectWrap .col.appsWrap .part {
-  margin-right: 2rem;
-  padding-left: 1rem;
-  padding-right: 1rem;
+.contentsWrapper .experienceWrapper .projectWrap .col dl.tools dd::before {
+  content: ",";
+  padding-right: .5rem;
+  margin-left: -.2rem;
 }
 
-.contentsWrapper .experienceWrapper .projectWrap .col.appsWrap .part + .part {
-  margin-top: 1rem;
-  padding-top: 1rem;
+.contentsWrapper .experienceWrapper .projectWrap .col dl.tools dd:first-of-type::before {
+  display: none;
+  padding-right: 0;
 }
 
-@media (max-width: 640px) {
-  .contentsWrapper .experienceWrapper ul li {
-    padding-left: 1rem;
-    padding-right: 1rem;
-  }
+@media screen and (max-width: 640px) {
   .contentsWrapper .experienceWrapper .projectWrap {
     display: block;
   }
   .contentsWrapper .experienceWrapper .projectWrap .col {
     display: block;
   }
+  .contentsWrapper .experienceWrapper .projectWrap .col + .col {
+    margin-top: 1rem;
+  }
   .contentsWrapper .experienceWrapper .projectWrap .col:first-child {
     width: 100%;
-    padding: .4rem 0;
-    margin-bottom: 1rem;
-    background: #f1f1f1;
   }
   .contentsWrapper .experienceWrapper .projectWrap .col:first-child + .col {
     width: 100%;
   }
-  .contentsWrapper .experienceWrapper .projectWrap .col:first-child dl {
-    padding: 0 1rem;
+  .contentsWrapper .experienceWrapper .projectWrap .col dl.participation dt {
+    display: inline-block;
+    font-size: 1.3rem;
   }
-  .contentsWrapper .experienceWrapper .projectWrap .col dl.role {
-    padding: 1rem 1rem 0;
+  .contentsWrapper .experienceWrapper .projectWrap .col dl.participation dt:after {
+    content: ":";
+  }
+  .contentsWrapper .experienceWrapper .projectWrap .col dl.participation dd {
+    display: inline-block;
+    font-size: 1.4rem;
+    font-weight: bold;
+  }
+  .contentsWrapper .experienceWrapper .projectWrap .col dl.participation dd:after {
+    font-size: 1.4rem;
   }
 }
