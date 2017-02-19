@@ -187,7 +187,7 @@
       "company": "인터파크",
       "project": {
         "name": "펫",
-        "explain": "반려동물 전문몰",
+        "explain": "반려동물",
         "type": [
           "모바일"
         ],
@@ -310,7 +310,7 @@
       "company": "인터파크",
       "project": {
         "name": "IPSS",
-        "explain": "판매자매니저 관리시스템",
+        "explain": "판매자매니저",
         "type": [
           "모바일",
           "데스크탑"
@@ -374,8 +374,8 @@
     {
       "company": "인터파크",
       "project": {
-        "name": "Itoys",
-        "explain": "장난감왕국",
+        "name": "아이토이즈",
+        "explain": "완구 전문",
         "type": [
           "데스크탑"
         ],
