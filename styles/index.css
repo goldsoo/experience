@@ -537,7 +537,7 @@ button {
 }
 
 .contentsWrapper .experienceWrapper .projectWrap .col dl.url {
-  padding-bottom: .7rem;
+  padding-top: .9rem;
   font-size: 1.1rem;
   line-height: 1.4rem;
 }
@@ -580,25 +580,13 @@ button {
   .contentsWrapper .experienceWrapper .projectWrap .col + .col {
     margin-top: 1rem;
   }
+  .contentsWrapper .experienceWrapper .projectWrap .col .part + .part {
+    padding-top: 1rem;
+  }
   .contentsWrapper .experienceWrapper .projectWrap .col:first-child {
     width: 100%;
   }
   .contentsWrapper .experienceWrapper .projectWrap .col:first-child + .col {
     width: 100%;
-  }
-  .contentsWrapper .experienceWrapper .projectWrap .col dl.participation dt {
-    display: inline-block;
-    font-size: 1.3rem;
-  }
-  .contentsWrapper .experienceWrapper .projectWrap .col dl.participation dt:after {
-    content: ":";
-  }
-  .contentsWrapper .experienceWrapper .projectWrap .col dl.participation dd {
-    display: inline-block;
-    font-size: 1.4rem;
-    font-weight: bold;
-  }
-  .contentsWrapper .experienceWrapper .projectWrap .col dl.participation dd:after {
-    font-size: 1.4rem;
   }
 }
