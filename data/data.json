@@ -115,8 +115,8 @@
         "name": "쇼핑",
         "apps": {
           "type": [
-            "Website",
-            "Mobile Website"
+            "모바일",
+            "데스크탑"
           ],
           "icon": "./images/appIcon/shopping.png",
           "url": [
@@ -157,7 +157,7 @@
         "explain": "반려동물 전문몰",
         "apps": {
           "type": [
-            "Mobile Website"
+            "모바일"
           ],
           "icon": "./images/appIcon/pet.png",
           "appUrl": "https://play.google.com/store/apps/details?id=com.interpark.pet",
@@ -190,8 +190,8 @@
         "explain": "간편결제 시스템",
         "apps": {
           "type": [
-            "Website",
-            "Mobile Website"
+            "모바일",
+            "데스크탑"
           ],
           "description": [
             "인터파크 최초로 도입하는 간편결제 시스템(별도 앱설치 없이 사용가능) \n Node.js, Gulp 기반 UI프레임워크 신규 구축 후 진행 \n 이니시스, 옐로페이와 협업 \n 인터파크 쇼핑 선적용(테스크탑/모바일), 인터파크 펫, 체크인나우 적용예정"
@@ -224,8 +224,8 @@
         "explain": "판매자매니저 관리시스템",
         "apps": {
           "type": [
-            "Website",
-            "Mobile Website"
+            "모바일",
+            "데스크탑"
           ],
           "icon": "./images/appIcon/seller.png",
           "appUrl": "https://play.google.com/store/apps/details?id=com.interpark.sellermanager",
@@ -262,7 +262,7 @@
         "explain": "장난감왕국",
         "apps": {
           "type": [
-            "Website"
+            "데스크탑"
           ],
           "url": [
             "http://toy.interpark.com"
@@ -298,7 +298,7 @@
         "name": "글로벌 쇼핑",
         "apps": {
           "type": [
-            "Website"
+            "데스크탑"
           ],
           "url": [
             "http://www.globalinterpark.com"
