@@ -179,6 +179,13 @@ block body
                       each $description in $project.description
                         dd!= $description.replace(/\n/gm, '<br>')
 
+                    each $useTools in $project.useTools
+                      dl.tools
+                        dt= $useTools.label
+
+                        each $tool in $useTools.tools
+                          dd= $tool
+
                     if $project.urls
                       dl.url
                         dt URL
@@ -189,13 +196,6 @@ block body
                               href= $urls.url
                               target= '_blank')
                               = $urls.label + ': ' + $urls.url
-
-                    each $useTools in $project.useTools
-                      dl.tools
-                        dt= $useTools.label
-
-                        each $tool in $useTools.tools
-                          dd= $tool
 
       section.skillsWrapper
         h2
