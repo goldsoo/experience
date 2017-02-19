@@ -145,15 +145,31 @@ block body
             li
               .projectWrap
                 .col
-                  dl
-                    dt 프로젝트 이름
-                    dd.name= $project.name
-                  dl
-                    dt 프로젝트 회사
-                    dd.company
-                      = $experience.company + ' '
-                      if ($project.explain)
-                        = $project.explain
+                  .part
+                    dl
+                      dt 프로젝트 이름
+                      dd.name= $project.name
+
+                    dl
+                      dt 프로젝트 회사
+                      dd.company
+                        = $experience.company + ' '
+                        if ($project.explain)
+                          = $project.explain
+
+                  .part
+                    dl.type
+                      dt type
+
+                      each $type in $project.type
+                        dd= $type
+
+                    dl.period
+                      dt 기간
+                      dd.period
+                        time(datetime= $project.period.from)= $project.period.from
+                        = ' ~ '
+                        time(datetime= $project.period.to)= $project.period.to
 
                 .col.appsWrap
                   .part
@@ -162,12 +178,6 @@ block body
 
                       each $description in $project.description
                         dd!= $description.replace(/\n/gm, '<br>')
-
-                    dl.type
-                      dt type
-
-                      each $type in $project.type
-                        dd= $type
 
                     if $project.urls
                       dl.url
@@ -179,19 +189,6 @@ block body
                               href= $urls.url
                               target= '_blank')
                               = $urls.label + ': ' + $urls.url
-
-                    dl.period
-                      dt 기간
-                      dd.period
-                        time(datetime= $apps.period.from)= $apps.period.from
-                        = ' ~ '
-                        time(datetime= $apps.period.to)= $apps.period.to
-
-                    dl.role
-                      dt 역할
-
-                      each $roles in $project.roles
-                        dd= $roles
 
                     each $useTools in $project.useTools
                       dl.tools

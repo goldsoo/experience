@@ -505,10 +505,12 @@ button {
                 vertical-align: top;
 
                 &:first-child {
-                    width: 25%;
+                    width: 30%;
+                }
 
-                    + .col {
-                        width: 65%;
+                .part {
+                    + .part {
+                        padding-top: 2rem;
                     }
                 }
 
@@ -542,21 +544,12 @@ button {
                         }
                     }
 
-
-                    &.description {
-                        padding-bottom: 1rem;
-                        font-size: 1.4rem;
-                        line-height: 2rem;
-                    }
-
                     &.type {
-                        font-size: 1.4rem;
                         color: $sub-color;
                         padding-bottom: .1rem;
 
                         dd {
                             display: inline-block;
-                            margin-left: -.2rem;
 
                             &::before {
                                 content: ",";
@@ -572,8 +565,24 @@ button {
                         }
                     }
 
+                    &.period {
+                        color: $sub-color;
+
+                        dd {
+                            display: inline-block;
+                        }
+                    }
+
+                    &.description {
+                        padding-bottom: .8rem;
+                        font-size: 1.4rem;
+                        line-height: 2rem;
+                    }
+
                     &.url {
-                        padding-bottom: .4rem;
+                        padding-bottom: .7rem;
+                        font-size: 1.1rem;
+                        line-height: 1.4rem;
 
                         dd {
                             + dd {
@@ -582,22 +591,6 @@ button {
                         }
                     }
 
-                    &.period {
-                        dt {
-                            display: inline-block;
-
-                            &::after {
-                                content: ":";
-                                padding: 0 .4rem;
-                            }
-                        }
-
-                        dd {
-                            display: inline-block;
-                        }
-                    }
-
-                    &.role,
                     &.tools {
                         dt {
                             display: inline-block;
@@ -610,11 +603,11 @@ button {
 
                         dd {
                             display: inline-block;
-                            margin-left: -.2rem;
 
                             &::before {
                                 content: ",";
                                 padding-right: .5rem;
+                                margin-left: -.2rem;
                             }
 
                             &:first-of-type {
@@ -624,23 +617,6 @@ button {
                                 }
                             }
                         }
-                    }
-
-                    &.participation {
-                        dt {
-                            display: block;
-                            color: $sub-color;
-                        }
-
-                        dd {
-                            font-size: 2rem;
-
-                            &::after {
-                                content: "%";
-                                font-size: 1.2rem;
-                            }
-                        }
-
                     }
                 }
             }
