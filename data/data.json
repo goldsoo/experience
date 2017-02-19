@@ -525,7 +525,7 @@
           "percentage": 85
         },
         {
-          "name": "Ejs",
+          "name": "ejs",
           "website": "https://github.com/mde/ejs",
           "description": "Embedded JavaScript templates",
           "image": "",
